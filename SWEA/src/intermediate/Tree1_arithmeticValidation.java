@@ -2,7 +2,7 @@ package intermediate;
 
 import java.util.Scanner;
 
-public class Tress1_arithmeticValidation {
+public class Tree1_arithmeticValidation {
 	
 	
 	public static void main(String[] args) {
