@@ -1,4 +1,4 @@
-package data_structure;
+package graph_and_tree;
 
 public class BinaryHeap {
 // BinaryHeap : 최대값, 최소값을 빠르게 가져오는 방법

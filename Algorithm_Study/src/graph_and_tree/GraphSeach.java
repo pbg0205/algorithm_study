@@ -1,4 +1,4 @@
-package data_structure;
+package graph_and_tree;
 
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
@@ -75,7 +75,7 @@ class Graph{
 		}
 	}
 
-	Node[] nodes;
+	Node[] nodes;//node를 관리할 배열 방
 
 	Graph(int size) {
 		nodes = new Node[size];

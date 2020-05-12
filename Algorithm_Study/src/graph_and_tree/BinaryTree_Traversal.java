@@ -1,4 +1,4 @@
-package data_structure;
+package graph_and_tree;
 
 public class BinaryTree_Traversal {
 // #BinaryTree : 자식 노드를 최대 2개까지만 가질 수 있는 트리구조.

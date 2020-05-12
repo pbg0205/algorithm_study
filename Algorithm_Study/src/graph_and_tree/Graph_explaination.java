@@ -1,4 +1,4 @@
-package data_structure;
+package graph_and_tree;
 
 public class Graph_explaination {
 //
