@@ -13,11 +13,14 @@
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="data_structure.Graph"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="data_structure.Graph1.Node"/>
 <fullyQualifiedTypeName name="data_structure.Graph1"/>
 <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
-<fullyQualifiedTypeName name="graph_and_tree.Node"/>
 <fullyQualifiedTypeName name="graph_and_tree.Tree"/>
 <fullyQualifiedTypeName name="graph_and_tree.Tree1"/>
+<fullyQualifiedTypeName name="graph_and_tree.Node"/>
+<fullyQualifiedTypeName name="java.lang.LinkageError"/>
+<fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>
