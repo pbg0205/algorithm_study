@@ -1,6 +1,35 @@
 package graph_and_tree;
 
 public class BinaryTree_Traversal {
+
+	// #BinaryTree : 자식 노드를 최대 2개까지만 가질 수 있는 트리구조.
+	// 트리의 데이터를 가지고 오는 방법
+	// 1. inOrder : left -> root -> right
+	//			1
+	//		   / \
+	//		  2   3
+	//		 / \
+	//      4	5
+	//--------------------------> 4 2 5 1 3
+		
+	// 2. preOrder : root -> left -> right
+	//--------------------------> 1 2 4 5 3
+	
+	// 3. postOrder : left -> right -> root
+	//--------------------------> 4 5 2 3 1
+	
+		public static void main(String[] args) {
+			Tree t = new Tree();
+			Node n4 = t.makeNode(null,  4,  null);
+			Node n5 = t.makeNode(null,  5,  null);
+			Node n2 = t.makeNode(n4,  2,  n5);
+			Node n3 = t.makeNode(null, 3, null);
+			Node n1 = t.makeNode(n2,  1,  n3);
+			t.setRoot(n1);
+			//t.inOrder(t.getRoot());
+			//t.preOrder(t.getRoot());
+			//t.postOrder(t.getRoot());
+		}
 // #BinaryTree : 자식 노드를 최대 2개까지만 가질 수 있는 트리구조.
 // 트리의 데이터를 가지고 오는 방법
 // 1. inOrder : left -> root -> right
@@ -9,7 +38,7 @@ public class BinaryTree_Traversal {
 //		  2   3
 //		 / \
 //      4	5
-//--------------------------> 1 2 4 5 3
+//--------------------------> 4 2 5 1 3
 	
 // 2. preOrder : root -> left -> right
 //--------------------------> 1 2 4 5 3
@@ -17,18 +46,7 @@ public class BinaryTree_Traversal {
 // 3. postOrder : left -> right -> root
 //--------------------------> 4 5 2 3 1
 
-	public static void main(String[] args) {
-		Tree t = new Tree();
-		Node n4 = t.makeNode(null,  4,  null);
-		Node n5 = t.makeNode(null,  5,  null);
-		Node n2 = t.makeNode(n4,  2,  n5);
-		Node n3 = t.makeNode(null, 3, null);
-		Node n1 = t.makeNode(n2,  1,  n3);
-		t.setRoot(n1);
-		//t.inOrder(t.getRoot());
-		//t.preOrder(t.getRoot());
-		t.postOrder(t.getRoot());
-	}
+	
 }
 
 class Node{
@@ -37,7 +55,23 @@ class Node{
 	Node right;
 }
 
-class Tree{
+// #BinaryTree : 자식 노드를 최대 2개까지만 가질 수 있는 트리구조.
+// 트리의 데이터를 가지고 오는 방법
+// 1. inOrder : left -> root -> right
+//			1
+//		   / \
+//		  2   3
+//		 / \
+//      4	5
+//--------------------------> 4 2 5 1 3
+	
+// 2. preOrder : root -> left -> right
+//--------------------------> 1 2 4 5 3
+
+// 3. postOrder : left -> right -> root
+//--------------------------> 4 5 2 3 1
+
+	class Tree{
 	public Node root;
 	
 	public void setRoot(Node node) {
