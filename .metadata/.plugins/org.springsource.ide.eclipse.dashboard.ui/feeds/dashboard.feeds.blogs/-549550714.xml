@@ -5,7 +5,27 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-06-23T22:43:00Z</updated>
+  <updated>2020-06-25T08:40:14Z</updated>
+  <entry>
+    <title>First Spring Framework 5.3 milestone released</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/06/25/first-spring-framework-5-3-milestone-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2020-06-24:4114</id>
+    <updated>2020-06-25T08:40:14Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+&lt;p&gt;On behalf of the team and everyone who contributed, it is my pleasure to announce that &lt;a href="https://github.com/spring-projects/spring-framework/milestone/222"&gt;Spring Framework 5.3 M1&lt;/a&gt; is available from &lt;a href="https://repo.spring.io/milestone/"&gt;our milestone repository&lt;/a&gt; now! Find an initial list of &lt;a href="https://github.com/spring-projects/spring-framework/wiki/What%27s-New-in-Spring-Framework-5.x#whats-new-in-version-53"&gt;new features and refinements&lt;/a&gt; and corresponding &lt;a href="https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#upgrading-to-version-53"&gt;upgrade notes including several deprecations&lt;/a&gt; on our wiki.&lt;/p&gt;
+&lt;p&gt;Please note that 5.3 is designed as the final 5.x feature release, wrapping up the major themes in the Spring Framework 5 generation, in particular reactive programming and Kotlin support, while also taking GraalVM compatibility to the next level. Last but not least, we are not only preparing for JDK 15 and 16 but also for next year&amp;rsquo;s JDK 17 LTS already, expecting an extended 5.3.x maintenance life.&lt;/p&gt;
+&lt;p&gt;As a new module in 5.3, &lt;code&gt;spring-r2dbc&lt;/code&gt; introduces core &lt;a href="https://r2dbc.io/"&gt;R2DBC&lt;/a&gt; support within the Spring Framework umbrella, analogous to the existing &lt;code&gt;spring-jdbc&lt;/code&gt; module. While several R2DBC support features are still candidates for some minor refactoring, 5.3 M1 includes a pretty comprehensive arrangement there already, including a reactive &lt;code&gt;DatabaseClient&lt;/code&gt; API (analogous to &lt;code&gt;WebClient&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;At the same time, we are revisiting our JDBC support: e.g. introducing &lt;code&gt;queryForStream&lt;/code&gt; operations on &lt;code&gt;JdbcTemplate&lt;/code&gt; and providing a &lt;code&gt;JdbcTransactionManager&lt;/code&gt; with commit exception translation.&lt;/p&gt;
+&lt;p&gt;This milestone also &lt;a href="https://github.com/spring-projects/spring-framework/issues/22968#issuecomment-638136709"&gt;improves GraalVM native support&lt;/a&gt;, e.g. making default &lt;code&gt;DispatcherServlet&lt;/code&gt; configuration fully discoverable and allowing for the removal of unsupported features from native images (e.g. through properties such as &lt;code&gt;spring.spel.ignore&lt;/code&gt; and &lt;code&gt;spring.xml.ignore&lt;/code&gt;). The &lt;a href="https://github.com/spring-projects-experimental/spring-graalvm-native"&gt;&lt;code&gt;spring-graalvm-native&lt;/code&gt;&lt;/a&gt; project is tracking Spring Framework 5.3 milestones from now on.&lt;/p&gt;
+&lt;p&gt;Revisiting Spring&amp;rsquo;s web support, Spring MVC comes with &lt;code&gt;PathPattern&lt;/code&gt; parsing for efficient URL matching now, and WebFlux comes with a completely new and fully reactive multipart parser implementation, plus many further refinements in 5.3 M1 already.&lt;/p&gt;
+&lt;p&gt;A &lt;a href="https://github.com/spring-projects/spring-framework/milestone/237"&gt;second milestone&lt;/a&gt; is planned for early August, introducing data binding for Java record classes as well as Kotlin 1.4 and &lt;a href="https://github.com/Kotlin/kotlinx.serialization"&gt;&lt;code&gt;kotlinx.serialization&lt;/code&gt;&lt;/a&gt; support for JSON on Spring MVC. A first release candidate is planned for mid September, with general availability expected in late October.&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - June 23, 2020</title>
     <link rel="alternate" href="https://spring.io/blog/2020/06/23/this-week-in-spring-june-23-2020" />
@@ -1278,33 +1298,6 @@ public class SampleConfiguration {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - June 9th , 2020</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/09/this-week-in-spring-june-9th-2020" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-06-09:4094</id>
-    <updated>2020-06-09T21:10:25Z</updated>
-    <content type="html">&lt;p&gt;Hi. How are you all doing? I hope you&amp;rsquo;re doing well. &lt;/p&gt;
-&lt;p&gt;There&amp;rsquo;s some interesting stuff this week so, without further ado&amp;hellip; &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/09/spring-framework-5-2-7-and-5-1-16-available-now"&gt;Spring Framework 5.2.7 and 5.1.16 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/08/migrating-spring-boot-s-build-to-gradle"&gt;Migrating Spring Boot&amp;rsquo;s Build to Gradle&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/05/a-bootiful-podcast-kubernetes-release-sig-tim-pepper"&gt;A Bootiful Podcast: Kubernetes Release SIG Tim Pepper&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Just curious, how do you run your Spring Boot application? &lt;a href="https://twitter.com/springcloud/status/1270206653997219843"&gt;Interesting thread&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2019/11/21/github-new-security-lab/"&gt;VMware: A Founding Member of GitHub&amp;rsquo;s New Security Lab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/configure-spring-data-jdbc-with-azure-sql-server?WT.mc_id=twitter-social-judubois"&gt;Use Spring Data JDBC with Azure SQL Database | Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;RabbitMQ will be migrating to &lt;a href="https://groups.google.com/forum/#!topic/rabbitmq-users/Ex8a2vHTw7I"&gt;Mozilla Public License 2.0 in the upcoming month(s)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;An interesting article on &lt;a href="https://inside.java/2020/06/08/preemtive-scheduling/"&gt;virtual threads use of preemptive scheduling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://piotrminkowski.com/2020/06/05/introduction-to-event-driven-microservices-with-spring-cloud-stream/"&gt;Introduction to event-driven microservices with Spring Cloud Stream ? Piotr&amp;rsquo;s TechBlog&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Great Twitter thread by Sergi Almar: &lt;a href="https://twitter.com/sergialmar/status/1268490510261465088?s=12"&gt;&amp;ldquo;Autoconfiguration was a game changer for Spring&amp;hellip;&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;A nice look at tools and practices for benchmarking and &lt;a href="https://www.rabbitmq.com/blog/2020/06/04/how-to-run-benchmarks/"&gt;simulating workloads on RabbitMQ installations&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/06/03/dr-bhandaru-talks-edgex-bootiful-podcast/"&gt;What¡¯s Up Doc? Dr. Bhandaru Talks EdgeX on the Bootiful Podcast with Josh Long&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
