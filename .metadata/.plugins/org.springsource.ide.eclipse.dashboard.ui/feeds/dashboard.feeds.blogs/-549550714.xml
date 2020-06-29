@@ -5,7 +5,72 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-06-25T22:06:47Z</updated>
+  <updated>2020-06-26T19:48:51Z</updated>
+  <entry>
+    <title>Spring Batch 4.3.0-M1 is released now!</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/06/26/spring-batch-4-3-0-m1-is-released-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mahmoud Ben Hassine</name>
+    </author>
+    <id>tag:spring.io,2020-06-26:4117</id>
+    <updated>2020-06-26T19:48:51Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring Batch team, I am pleased to announce that Spring Batch 4.3.0-M1 is now available from our &lt;a href="https://repo.spring.io/milestone/"&gt;milestone repository&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-s-new" class="anchor" name="what-s-new"&gt;&lt;/a&gt;What¡¯s new?&lt;/h2&gt;
+&lt;p&gt;This release is packed with new features, performance improvements, and bug fixes, as well as documentation and dependency updates! You can find the complete list of changes in the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/4.3.0-M1"&gt;release notes&lt;/a&gt;, but here are the major highlights:&lt;/p&gt;&lt;h2&gt;&lt;a href="#new-features" class="anchor" name="new-features"&gt;&lt;/a&gt;New features&lt;/h2&gt;&lt;h4&gt;&lt;a href="#1-new-synchronized-code-itemstreamwriter-code" class="anchor" name="1-new-synchronized-code-itemstreamwriter-code"&gt;&lt;/a&gt;1. New synchronized &lt;code&gt;ItemStreamWriter&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;Similar to the &lt;code&gt;SynchronizedItemStreamReader&lt;/code&gt;, we added a &lt;code&gt;SynchronizedItemStreamWriter&lt;/code&gt;. This feature is useful in multi-threaded steps where concurrent threads need to be synchronized to not override each other&amp;rsquo;s writes.&lt;/p&gt;&lt;h4&gt;&lt;a href="#2-add-support-for-named-queries-in-code-jpapagingitemreader-code" class="anchor" name="2-add-support-for-named-queries-in-code-jpapagingitemreader-code"&gt;&lt;/a&gt;2. Add support for named queries in &lt;code&gt;JpaPagingItemReader&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;Up until now, it was possible to use named queries with the &lt;code&gt;JpaPagingItemReader&lt;/code&gt;. However, this required the creation of a custom query provider, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;JpaPagingItemReader&amp;lt;Foo&amp;gt; reader = new JpaPagingItemReaderBuilder&amp;lt;Foo&amp;gt;()&#xD;
+    .name(&amp;quot;fooReader&amp;quot;)&#xD;
+    .queryProvider(new AbstractJpaQueryProvider() {&#xD;
+       @Override&#xD;
+       public Query createQuery() {&#xD;
+          return getEntityManager().createNamedQuery(&amp;quot;allFoos&amp;quot;, Foo.class);&#xD;
+       }&#xD;
+&#xD;
+       @Override&#xD;
+       public void afterPropertiesSet() throws Exception {&#xD;
+       }&#xD;
+    })&#xD;
+    // set other properties on the reader&#xD;
+    .build();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this release, we introduced a &lt;code&gt;JpaNamedQueryProvider&lt;/code&gt; next to the &lt;code&gt;JpaNativeQueryProvider&lt;/code&gt;&lt;br/&gt;to ease the configuration, which can now be written like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;JpaPagingItemReader&amp;lt;Foo&amp;gt; reader = new JpaPagingItemReaderBuilder&amp;lt;Foo&amp;gt;()&#xD;
+		.name(&amp;quot;fooReader&amp;quot;)&#xD;
+		.queryProvider(new JpaNamedQueryProvider(&amp;quot;allFoos&amp;quot;, Foo.class))&#xD;
+		// set other properties on the reader&#xD;
+		.build();
+&lt;/code&gt;&lt;/pre&gt;&lt;h4&gt;&lt;a href="#3-simplify-the-configuration-of-spring-batch-tests-with-junit-5" class="anchor" name="3-simplify-the-configuration-of-spring-batch-tests-with-junit-5"&gt;&lt;/a&gt;3. Simplify the configuration of Spring Batch tests with JUnit 5&lt;/h4&gt;
+&lt;p&gt;Similar to how many Spring Boot test annotations are meta-annotated with &lt;code&gt;@ExtendWith(SpringExtension.class)&lt;/code&gt; (like &lt;code&gt;@SpringBootTest&lt;/code&gt;, &lt;code&gt;@WebMvcTest&lt;/code&gt;, and others), we updated &lt;code&gt;@SpringBatchTest&lt;/code&gt; to be meta-annotated with &lt;code&gt;@ExtendWith(SpringExtension.class)&lt;/code&gt;. This simplifies the configuration when writing tests with JUnit Jupiter.&lt;/p&gt;
+&lt;p&gt;Please note that this feature does not affect JUnit 4 users, it only concerns JUnit 5 based tests.&lt;/p&gt;&lt;h2&gt;&lt;a href="#performance-improvements" class="anchor" name="performance-improvements"&gt;&lt;/a&gt;Performance improvements&lt;/h2&gt;
+&lt;p&gt;Along the same lines of performance improvements we introduced in &lt;a href="https://spring.io/blog/2019/10/02/spring-batch-4-2-in-now-ga#performance-improvements"&gt;version 4.2&lt;/a&gt;, we continued our work on improving several parts of the framework in this release as well.&lt;/p&gt;&lt;h4&gt;&lt;a href="#1-use-bulk-writes-in-code-repositoryitemwriter-code" class="anchor" name="1-use-bulk-writes-in-code-repositoryitemwriter-code"&gt;&lt;/a&gt;1. Use bulk writes in &lt;code&gt;RepositoryItemWriter&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;Up to version 4.2, it was required to specify the method name to use to save an item to the database. This method was then called in a &lt;code&gt;for&lt;/code&gt; loop to save all items. In order to use &lt;code&gt;CrudRepository#saveAll&lt;/code&gt;, it was required to extend &lt;code&gt;RepositoryItemWriter&lt;/code&gt; and override &lt;code&gt;write(List)&lt;/code&gt;, which is not convenient.&lt;/p&gt;
+&lt;p&gt;In this release, we made the &lt;code&gt;RepositoryItemWriter&lt;/code&gt; use &lt;code&gt;CrudRepository#saveAll&lt;/code&gt; by default. This changes improves the performance of the writer by a factor of 2, according to our benchmark &lt;a href="#footnotes"&gt;repository-item-writer-benchmark&lt;/a&gt;.&lt;/p&gt;&lt;h4&gt;&lt;a href="#2-use-bulk-writes-in-code-mongoitemwriter-code" class="anchor" name="2-use-bulk-writes-in-code-mongoitemwriter-code"&gt;&lt;/a&gt;2. Use bulk writes in &lt;code&gt;MongoItemWriter&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;Up until now, the &lt;code&gt;MongoItemWriter&lt;/code&gt; used &lt;code&gt;MongoOperations#save()&lt;/code&gt; in a &lt;code&gt;for&lt;/code&gt; loop to save items to the database. In this release, we replaced this mechanism with a single call to &lt;code&gt;BulkOperations&lt;/code&gt;. With this change, the &lt;code&gt;MongotItemWriter&lt;/code&gt; is 25x faster than the previous version, according to our benchmark &lt;a href="#footnotes"&gt;mongo-item-writer-benchmark&lt;/a&gt;.&lt;/p&gt;&lt;h4&gt;&lt;a href="#3-job-start-restart-time-improvement" class="anchor" name="3-job-start-restart-time-improvement"&gt;&lt;/a&gt;3. Job start/restart time improvement&lt;/h4&gt;
+&lt;p&gt;When starting a new job (or restarting a failed job), Spring Batch does a number of checks to validate a few conditions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check if the current execution is a new one or a restart of a failed one&lt;/li&gt;
+  &lt;li&gt;Check if the number of executions does not exceed the start limit&lt;/li&gt;
+  &lt;li&gt;Additional checks&amp;hellip;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these checks involve a call to &lt;code&gt;JobRepository.getStepExecutionCount&lt;/code&gt; to count the number of step executions. Up to v4.2, the implementation of this method was loading all job executions and step executions to do the count in-memory on the framework side. In this release, we have changed the implementation to do a single call to the database with a &lt;code&gt;count&lt;/code&gt; query. This change improves memory usage as well as the method&amp;rsquo;s response time, which, in turn, improves the overall start time of steps and jobs.&lt;/p&gt;&lt;h2&gt;&lt;a href="#dependency-upgrades" class="anchor" name="dependency-upgrades"&gt;&lt;/a&gt;Dependency Upgrades&lt;/h2&gt;
+&lt;p&gt;This release upgrades Spring projects dependencies to the following versions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Framework 5.3.0-M1&lt;/li&gt;
+  &lt;li&gt;Spring Data 2020.0.0-M1&lt;/li&gt;
+  &lt;li&gt;Spring Integration 5.4.0-M1&lt;/li&gt;
+  &lt;li&gt;Spring AMQP 2.3.0-M1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spring Batch v4.3.0-M1 can be consumed with Spring Boot 2.4.0-M1, which is planned to be released next week. Stay tuned!&lt;/p&gt;&lt;h2&gt;&lt;a href="#feedback-and-contributions" class="anchor" name="feedback-and-contributions"&gt;&lt;/a&gt;Feedback and contributions&lt;/h2&gt;
+&lt;p&gt;I would like to thank all contributors, especially &lt;a href="https://github.com/parikshitdutta"&gt;Parikshit Dutta&lt;/a&gt; for his numerous contributions to this release! We look forward to your feedback on this milestone on &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-batch/issues/new/choose"&gt;Github&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#footnotes" class="anchor" name="footnotes"&gt;&lt;/a&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;All benchmarks have been performed on a Macbook Pro with 16Go RAM, 2.9 GHz Intel Core i7 CPU, MacOS Catalina 10.15.5, and Oracle JDK 1.8.0_201. You can find the source code of all benchmarks in the following links:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;repository-item-writer-benchmark: &lt;a href="https://github.com/benas/spring-batch-lab/tree/master/issues/gh3720"&gt;https://github.com/benas/spring-batch-lab/tree/master/issues/gh3720&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;repository-item-writer-benchmark: &lt;a href="https://github.com/benas/spring-batch-lab/tree/master/issues/gh3713"&gt;https://github.com/benas/spring-batch-lab/tree/master/issues/gh3713&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/4.3.0-M1/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Tanzu Wavefront co-founder and VMware Principal Engineer Clement Pang</title>
     <link rel="alternate" href="https://spring.io/blog/2020/06/25/a-bootiful-podcast-tanzu-wavefront-co-founder-and-vmware-principal-engineer-clement-pang" />
@@ -943,55 +1008,6 @@ class Customer {&#xD;
 &lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.15.RELEASE"&gt;25 bug fixes, enhancements, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.15.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud App Broker 1.1.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/10/spring-cloud-app-broker-1-1-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Gareth Clay</name>
-    </author>
-    <id>tag:spring.io,2020-06-10:4096</id>
-    <updated>2020-06-10T14:07:21Z</updated>
-    <content type="html">&lt;p&gt;We are pleased to announce the release of Spring Cloud App Broker 1.1.1. Thanks to the community for your feedback and contributions! This release includes the following fixes and improvements:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Upgrade to Spring Cloud Open Service Broker 3.1.1.RELEASE&lt;/li&gt;
-  &lt;li&gt;Upgrade to Spring Boot 2.2.7.RELEASE&lt;/li&gt;
-  &lt;li&gt;Upgrade to CF Java Client 4.7.0.RELEASE&lt;/li&gt;
-  &lt;li&gt;Upgrade to Spring CredHub 2.1.1.RELEASE&lt;/li&gt;
-  &lt;li&gt;Permissions stored in CredHub are now cleaned up on unbind&lt;/li&gt;
-  &lt;li&gt;Backing app environment is updated on upgrade&lt;/li&gt;
-  &lt;li&gt;Add service instance logging endpoints to support the &lt;a href="https://github.com/pivotal-cf/service-instance-logs-cli-plugin"&gt;service instance logs CF CLI plugin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Fixed an issue where configured backing services were not being deleted&lt;/li&gt;
-  &lt;li&gt;Fixed an issue with deletion of permissions from CredHub&lt;/li&gt;
-  &lt;li&gt;Add a new logging starter&lt;/li&gt;
-  &lt;li&gt;Logging updates to ensure potentially sensitive configuration data is only logged in debug mode&lt;/li&gt;
-  &lt;li&gt;Extend the API to allow service instance management operations to be performed without the requirement for the &lt;code&gt;cloud_controller.admin&lt;/code&gt; authority&lt;/li&gt;
-  &lt;li&gt;Add documentation on how to create a custom Target&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Gradle:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;implementation(&amp;quot;org.springframework.cloud:spring-cloud-starter-app-broker-cloudfoundry:1.1.1.RELEASE&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Maven:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;&amp;lt;dependency&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-cloud-starter-app-broker-cloudfoundry&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.1.1.RELEASE&amp;lt;/version&amp;gt;&#xD;
-&amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Optionally, if you would like to enable the logging endpoints to support the &lt;a href="https://github.com/pivotal-cf/service-instance-logs-cli-plugin"&gt;service instance logs CF CLI plugin&lt;/a&gt;, additionally add the new logging starter dependency:&lt;/p&gt;
-&lt;p&gt;Gradle:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;implementation(&amp;quot;org.springframework.cloud:spring-cloud-starter-app-broker-logging:1.1.1.RELEASE&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Maven:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint"&gt;&amp;lt;dependency&amp;gt;&#xD;
-  &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;&#xD;
-  &amp;lt;artifactId&amp;gt;spring-cloud-starter-app-broker-logging&amp;lt;/artifactId&amp;gt;&#xD;
-  &amp;lt;version&amp;gt;1.1.1.RELEASE&amp;lt;/version&amp;gt;&#xD;
-&amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-cloud-app-broker"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-cloud/spring-cloud-app-broker"&gt;GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/1.1.1.RELEASE/reference/"&gt;Reference Doc&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-cloud-app-broker/docs/1.1.1.RELEASE/api/"&gt;API Doc&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
