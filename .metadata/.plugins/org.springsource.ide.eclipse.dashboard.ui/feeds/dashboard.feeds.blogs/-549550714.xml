@@ -5,7 +5,130 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-07-01T06:13:52Z</updated>
+  <updated>2020-07-03T01:48:58Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: An Exciting Week of Releases and Dr. Yordan Karadzhov</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/03/a-bootiful-podcast-an-exciting-week-of-releases-and-dr-yordan-karadzhov" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-07-03:4123</id>
+    <updated>2020-07-03T01:48:58Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Dr. Yordan Karadzhov about instrumenting and visualizing the Linux Kernel, and understanding what&amp;rsquo;s happening from the perspective of the platform, containers, and cloud-native Spring applications.&lt;/p&gt;
+&lt;iframe title="Dr. Yordan Karadzhov on instrumenting and visualizing the Linux Kernel" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/wj8sm-e1ef51?from=yiiadmin&amp;download=1&amp;version=1&amp;skin=1&amp;btn-skin=107&amp;auto=0&amp;share=1&amp;fonts=Helvetica&amp;download=1&amp;rtl=0&amp;pbad=1"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security 5.4.0-M2 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/02/spring-security-5-4-0-m2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Josh Cummings</name>
+    </author>
+    <id>tag:spring.io,2020-07-01:4122</id>
+    <updated>2020-07-02T14:59:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community, I¡¯m pleased to announce the release of
+Spring Security 5.4.0-M2! You can find the complete details in the &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.4.0-M2"&gt;release notes&lt;/a&gt; and the highlights below:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="oauth-2-0"&gt;&lt;a class="anchor" href="#oauth-2-0"&gt;&lt;/a&gt;OAuth 2.0&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8700-oauth2authorizedclientargumentresolver-picks-up-oauth2authorizedclientmanager-bean"&gt;&lt;a class="anchor" href="#gh-8700-oauth2authorizedclientargumentresolver-picks-up-oauth2authorizedclientmanager-bean"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8700"&gt;gh-8700&lt;/a&gt; - OAuth2AuthorizedClientArgumentResolver picks up OAuth2AuthorizedClientManager bean&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8730-add-jwtprocessor-configuration-post-processor"&gt;&lt;a class="anchor" href="#gh-8730-add-jwtprocessor-configuration-post-processor"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8730"&gt;gh-8730&lt;/a&gt; - Add JWTProcessor Configuration Post-Processor&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8669-oauth2authorizedclientargumentresolver-for-xml"&gt;&lt;a class="anchor" href="#gh-8669-oauth2authorizedclientargumentresolver-for-xml"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8669"&gt;gh-8669&lt;/a&gt; - OAuth2AuthorizedClientArgumentResolver for XML&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8587-add-serverrequestcache-setter-in-oauth2authorizationcodegrantwebfilter"&gt;&lt;a class="anchor" href="#gh-8587-add-serverrequestcache-setter-in-oauth2authorizationcodegrantwebfilter"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8587"&gt;gh-8587&lt;/a&gt; - Add ServerRequestCache setter in OAuth2AuthorizationCodeGrantWebFilter&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8603-oauth2client-test-support-no-longer-requires-an-httpsessionoauth2authorizedclientrepository"&gt;&lt;a class="anchor" href="#gh-8603-oauth2client-test-support-no-longer-requires-an-httpsessionoauth2authorizedclientrepository"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8603"&gt;gh-8603&lt;/a&gt; - oauth2Client Test Support no longer requires an HttpSessionOAuth2AuthorizedClientRepository&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8501-add-issueruri-to-clientregistration"&gt;&lt;a class="anchor" href="#gh-8501-add-issueruri-to-clientregistration"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8501"&gt;gh-8501&lt;/a&gt; - Add issuerUri to ClientRegistration&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="web"&gt;&lt;a class="anchor" href="#web"&gt;&lt;/a&gt;Web&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8644-gh-8703-stricthttpfirewall-improvements"&gt;&lt;a class="anchor" href="#gh-8644-gh-8703-stricthttpfirewall-improvements"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8644"&gt;gh-8644&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/pull/8703"&gt;gh-8703&lt;/a&gt; - StrictHttpFirewall improvements&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8677-deprecate-x-frame-options-allow-from"&gt;&lt;a class="anchor" href="#gh-8677-deprecate-x-frame-options-allow-from"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8677"&gt;gh-8677&lt;/a&gt; - Deprecate X-Frame-Options ALLOW-FROM&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8676-replace-whiteblacklist-with-allowblocklist"&gt;&lt;a class="anchor" href="#gh-8676-replace-whiteblacklist-with-allowblocklist"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8676"&gt;gh-8676&lt;/a&gt; - Replace white/blacklist with allow/blocklist&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="docs"&gt;&lt;a class="anchor" href="#docs"&gt;&lt;/a&gt;Docs&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8199-gh-8542-additional-documentation-restructuring"&gt;&lt;a class="anchor" href="#gh-8199-gh-8542-additional-documentation-restructuring"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8199"&gt;gh-8199&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-security/pull/8542"&gt;gh-8542&lt;/a&gt; - Additional Documentation Restructuring&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="kotlin"&gt;&lt;a class="anchor" href="#kotlin"&gt;&lt;/a&gt;Kotlin&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8697-add-reified-function-variants-to-security-dsl"&gt;&lt;a class="anchor" href="#gh-8697-add-reified-function-variants-to-security-dsl"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8697"&gt;gh-8697&lt;/a&gt; - Add Reified Function Variants to Security DSL&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="openid"&gt;&lt;a class="anchor" href="#openid"&gt;&lt;/a&gt;OpenID&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8450-deprecate-openid-2-0-support"&gt;&lt;a class="anchor" href="#gh-8450-deprecate-openid-2-0-support"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8450"&gt;gh-8450&lt;/a&gt; - Deprecate OpenID 2.0 support&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="ldap"&gt;&lt;a class="anchor" href="#ldap"&gt;&lt;/a&gt;LDAP&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8416-apachedscontainer-allows-port-0"&gt;&lt;a class="anchor" href="#gh-8416-apachedscontainer-allows-port-0"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8416"&gt;gh-8416&lt;/a&gt; - ApacheDSContainer allows port 0&lt;/h5&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="saml"&gt;&lt;a class="anchor" href="#saml"&gt;&lt;/a&gt;SAML&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sect4"&gt;
+&lt;h5 id="gh-8661-saml-2-0-attribute-support"&gt;&lt;a class="anchor" href="#gh-8661-saml-2-0-attribute-support"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8661"&gt;gh-8661&lt;/a&gt; - SAML 2.0 Attribute support&lt;/h5&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
+&lt;a href="https://docs.spring.io/spring-security/site/docs/5.4.0-M2/reference/html5/"&gt;Reference&lt;/a&gt;
+| &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - June 30th, 2020</title>
     <link rel="alternate" href="https://spring.io/blog/2020/07/01/this-week-in-spring-june-30th-2020" />
@@ -1106,34 +1229,6 @@ class Customer {&#xD;
     <content type="html">&lt;p&gt;Need better insight into your Spring Boot Applications? Join Spring Developer Advocate &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt; and Sushant Dewan in a live webinar conversation on June 24th at 10:00 AM PST.&lt;/p&gt;
 &lt;p&gt;Get Tanzu Observability tips on how to understand the impact of your code on your application with application maps, metrics, distributed traces, histograms, and span logs analytics!&lt;/p&gt;
 &lt;p&gt;Register now &lt;a href="https://tanzu.vmware.com/content/webinars/jun-24-tanzu-observability-tips-for-understanding-your-spring-boot-applications"&gt;for this free, virtual event&lt;/a&gt; you won&amp;rsquo;t want to miss. &lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.3.1 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/12/spring-boot-2-3-1-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2020-06-12:4103</id>
-    <updated>2020-06-12T06:35:17Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone that has contributed, I&amp;rsquo;m happy to announce that Spring Boot 2.3.1 has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.3.1.RELEASE"&gt;127 bug fixes, enhancements, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Kubernetes guru Paul Czarkowski</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/11/a-bootiful-podcast-kubernetes-guru-paul-czarkowski" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-06-11:4102</id>
-    <updated>2020-06-11T21:35:59Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of a Bootiful Podcast. In this episode &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Kubernetes guru and colleague &lt;a href="http://twitter.com/pczarkowski"&gt;Paul Czarkowski (@pczarkowski)&lt;/a&gt; about Austin, TX BBQ, Kubernetes and so much more. &lt;/p&gt;
-&lt;iframe title="Kubernetes guru Paul Czarkowski" src="https://www.podbean.com/media/player/rmgrf-df8945-pb?from=share&amp;skin=1&amp;share=1&amp;fonts=Helvetica&amp;download=1&amp;version=1&amp;vjs=1&amp;skin=1" height="315" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
