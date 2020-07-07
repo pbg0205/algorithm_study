@@ -14,7 +14,7 @@ public class word_reverse {
 			Stack<Character> stack = new Stack<>();
 			String str = br.readLine();
 			str += ' ';
-			
+			//ex) I' 'am' 'happy' 'today' '
 			for (int index = 0; index < str.length(); index++) {
 				if(str.charAt(index) == ' ') {
 					while(!stack.isEmpty()) {
