@@ -13,10 +13,10 @@ public class word_reverse {
 		for (int test_num = 1; test_num <= test_case; test_num++) {
 			Stack<Character> stack = new Stack<>();
 			String str = br.readLine();
-			str += '\n';
+			str += ' ';
 			
 			for (int index = 0; index < str.length(); index++) {
-				if(str.charAt(index) == ' ' || str.charAt(index) == '\n') {
+				if(str.charAt(index) == ' ') {
 					while(!stack.isEmpty()) {
 						System.out.print(stack.pop());
 					}
