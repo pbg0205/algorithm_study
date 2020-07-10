@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamic_programming1;
 
 import java.util.Scanner;
 //문제: 1만들기 (1463)

@@ -15,7 +15,7 @@ public class word_reverse2 {
 		Queue<Character> queue = new LinkedList<>();
 		
 		String input_str = br.readLine();
-		input_str = input_str + '\n';
+		input_str = input_str + ' ';
 		
 		boolean has_bracket = false;
 		for (int i = 0; i < input_str.length(); i++) {
@@ -31,7 +31,7 @@ public class word_reverse2 {
 					has_bracket = false;
 				}
 			}else {
-				if(input_str.charAt(i) == ' ' || input_str.charAt(i) == '\n') {
+				if(input_str.charAt(i) == ' ') {
 					while(!stack.isEmpty())	System.out.print(stack.pop());
 					System.out.print(" ");
 				}else {
