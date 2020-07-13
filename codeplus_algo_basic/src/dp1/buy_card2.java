@@ -1,4 +1,4 @@
-package dynamic_programming1;
+package dp1;
 
 import java.util.Scanner;
 import java.util.Stack;
