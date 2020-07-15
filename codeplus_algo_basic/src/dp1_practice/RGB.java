@@ -27,6 +27,14 @@ public class RGB {
 		for (int i = 1; i <= 3; i++)
 			if(min > dp[n][i])	min = dp[n][i];
 
+		System.out.println();
+		for (int row = 1; row <= n; row++) {
+			for (int col = 1; col <= 3; col++) {
+				System.out.print(dp[row][col] + " ");
+			}
+			System.out.println();
+		}
+		
 		System.out.println(min);
 		
 		br.close();

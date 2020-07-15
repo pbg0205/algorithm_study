@@ -5,7 +5,46 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-07-14T14:42:31Z</updated>
+  <updated>2020-07-14T20:56:32Z</updated>
+  <entry>
+    <title>This Week in Spring - July 14th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/14/this-week-in-spring-july-14th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-07-14:4130</id>
+    <updated>2020-07-14T20:56:32Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! How&amp;rsquo;re things? Good? Good. I just finished (virtually) presenting for the always-lovely London Java Community this morning. We spoke about Kotlin and Spring and things. It was good. Thank you so much for having me LJC! I also kicked off the epic JetBrains Java Day Online event last Friday. That was a ton of fun! Thank you Jetbrains. I finally, &lt;em&gt;finally&lt;/em&gt;, put some elbow grease into automating a listing of some my activity and so now whenever I publish a new &lt;a href="http://bit.ly/spring-tips-playlist"&gt;&lt;em&gt;Spring Tips&lt;/em&gt;&lt;/a&gt; video, a new &lt;a href="http://bootifulpodcast.fm"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;&lt;/a&gt; podcast, or commit to a new public appearance, &lt;a href="http://joshlong.com/feed.html"&gt;I&amp;rsquo;ll have information here on my public activity feed page&lt;/a&gt;. The appearances that are there right now don&amp;rsquo;t represent all my upcoming appearances or even all my public appearances which you are free to attend, they only the ones I&amp;rsquo;ve polished off for presentation on this site. Give me a little while to go through the calendar and get more stuff there. There are a ton of things happening and I always do such a poor job of marketing them. Hopefully, this will help.&lt;/p&gt;
+&lt;p&gt;Speaking of abundance, there are a ton of things to get to in this week&amp;rsquo;s roundup so let&amp;rsquo;s get to it:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/10/a-bootiful-podcast-spring-data-jdbc-lead-on-spring-data-domain-driven-design-and-more"&gt;A Bootiful Podcast: Spring Data JDBC lead Jens Schauder on Spring Data, domain-driven design and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/14/building-web-applications-with-spring-boot-and-vaadin"&gt;Building web applications with Spring Boot and Vaadin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1282871251665551365"&gt;Did you know that SpringOne is virtual, and free, &lt;em&gt;this year&lt;/em&gt;? What¡¯re you waiting for? Get ta registerin¡¯!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/mariogray/status/1282895754999164928?s=12"&gt;Don¡¯t miss tomorrow¡¯s Datastax Accelerate watch party&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMwareTanzu/status/1281276936623456256"&gt;Find out how Pivotal Labs can help during fully remote work&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/10/first-milestone-of-reactor-2020-0-codename-europium"&gt;First milestone of Reactor 2020.0 (Codename Europium)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/news/2020/07/google-cloud-vmware-engine-ga/?itm_source=infoq&amp;itm_medium=popular_widget&amp;itm_campaign=popular_content_list&amp;itm_content="&gt;Google Announces Its Cloud VMware Engine Is Now Generally Available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1282765628714160130"&gt;Have you considered getting Spring training and becoming certified?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/13/introducing-java-functions-for-spring-cloud-stream-applications-part-0"&gt;Introducing Java Functions for Spring Cloud Stream Applications - Part 0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/ljcjug/status/1282559060202659841?s=12"&gt;I¡¯ll be speaking (virtually) at the London Java Community on Tuesday today!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.marcobehler.com/interviews/spring-interview-oliver-drotbohm"&gt;Marco Behler has another great interview, this time with Oliver Drotbohm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/07/13/jep388-candidate/"&gt;New candidate JEP: 388: Windows/AArch64 Port. This is &lt;em&gt;super&lt;/em&gt; cool in that it&amp;rsquo;s the first JEP from Microsoft! What a wonderful time to be alive!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1280893197233905664"&gt;Sign up now to hear from me on July 22-23 at the SpringOne Tour event on microservices. We&amp;rsquo;ll be covering &lt;em&gt;so much stuff&lt;/em&gt; friends. I&amp;rsquo;m looking forward to seeing you there! (And, by the way, if you have things you want to see covered, I&amp;rsquo;m doing an AMA-style session as well. :))&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/therealdanvega/status/1280680125940539392?s=12"&gt;Tech Elevator is now training on Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/lemsipabuse/status/1282634358709530625?s=12"&gt;Thanks for having me!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/07/09/the-past-present-and-future-of-cloud-foundry-part-2/"&gt;The Past, Present and Future of Cloud Foundry ? Part 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/rabbitmq/cluster-operator"&gt;The RabbitMQ Cluster Kubernetes Operator is now open source&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/14/the-spring-team-wants-to-hear-from-you"&gt;The Spring team wants to hear from you!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/SpringData/status/1280861630616739840"&gt;The team that&amp;rsquo;s been working on building a reactive Neo4J integration has just reached their first milestone: they&amp;rsquo;ve successfully integrated into Spring Data Neo4j. Next up: Spring Boot starters! Congrats to the Spring Data and Neo4j teams!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/07/14/zedstore-compressed-columnar-storage-for-postgres/"&gt;This is not strictly speaking a JVM or Spring-adjacent post but it&amp;rsquo;s super interesting. In it, Soumyadeep Deep introduces Zedstore, a Compressed Columnar Storage for Postgres, developed jointly by, among others, VMware. This has some interesting opportunities for things like Greenplum.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/SpringData/status/1281508972202262528"&gt;Thorben Janssen has a great video on Spring Data JPA Named Queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMwareTanzu/status/1283079565242400770"&gt;Three reasons you&amp;rsquo;ll deliver valuable software faster if you write tests first.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1283094108681244676"&gt;We&amp;rsquo;d love the community&amp;rsquo;s help as we redesign Spring Cloud Stream around functions.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMwareTanzu/status/1282717534710636544"&gt;Which SpringOne track are you most excited about?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>The Spring team wants to hear from you!</title>
     <link rel="alternate" href="https://spring.io/blog/2020/07/14/the-spring-team-wants-to-hear-from-you" />
@@ -352,14 +391,14 @@ sink.complete();
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
-    <title>A Bootiful Podcast: Spring Data JDBC lead on Spring Data, domain driven design and more</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/07/10/a-bootiful-podcast-spring-data-jdbc-lead-on-spring-data-domain-driven-design-and-more" />
+    <title>A Bootiful Podcast: Spring Data JDBC lead Jens Schauder on Spring Data, domain driven design and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/10/a-bootiful-podcast-spring-data-jdbc-lead-jens-schauder-on-spring-data-domain-driven-design-and-more" />
     <category term="engineering" label="Engineering" />
     <author>
       <name>Josh Long</name>
     </author>
     <id>tag:spring.io,2020-07-10:4126</id>
-    <updated>2020-07-10T00:12:32Z</updated>
+    <updated>2020-07-10T00:12:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of a Bootiful Podcast! In this installment &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks about the week that was and talks to the amazing Spring Data JDBC cofounder &lt;a href="https://twitter.com/jensschauder"&gt;Jens Schauder (@jensschauder) &lt;/a&gt; about JPA, JDBC, and domain-driven design. &lt;/p&gt;
 &lt;iframe title="Spring Data JDBC co-founder on JDBC, JPA and domain driven design" src="https://www.podbean.com/media/player/3449z-e2b0f1?from=usersite&amp;vjs=1&amp;skin=1&amp;fonts=Helvetica&amp;auto=0&amp;download=1" height="315" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
@@ -975,40 +1014,6 @@ Artem&lt;/p&gt;
   &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Shift-left_testing"&gt;Shift Left testing&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://spdx.org/licenses/"&gt;SPDX&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/spdx/spdx-maven-plugin"&gt;A Maven plugin supporting SPDX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>What's new in Spring Boot 2.3</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/18/what-s-new-in-spring-boot-2-3" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Phil Webb</name>
-    </author>
-    <id>tag:spring.io,2020-06-18:4110</id>
-    <updated>2020-06-18T16:17:49Z</updated>
-    <content type="html">&lt;p&gt;Speaker: &lt;a href="http://twitter.com/phillip_webb"&gt;Phil Webb (@phillip_webb)&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/WL7U-yGfUXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;h2&gt;&lt;a href="#timecodes" class="anchor" name="timecodes"&gt;&lt;/a&gt;Timecodes&lt;/h2&gt;
-&lt;p&gt;Use the timecodes below if you want to jump to a specific part of the presentation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=27"&gt;00:27&lt;/a&gt; - Intro&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=119"&gt;01:59&lt;/a&gt; - Creating the Demo&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=241"&gt;04:01&lt;/a&gt; - Building Docker Images with the Spring Boot Plugin&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=561"&gt;09:21&lt;/a&gt; - Building Docker Images with a Dockerfile&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=1000"&gt;16:40&lt;/a&gt; - Customizing Layers&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=1298"&gt;21:38&lt;/a&gt; - Graceful Shutdown&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=1519"&gt;25:19&lt;/a&gt; - Kubernetes Probes&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=1855"&gt;30:55&lt;/a&gt; - Configuration Properties End-to-End Traceability&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://youtu.be/WL7U-yGfUXA?t=1980"&gt;33:00&lt;/a&gt; - Wrap-up and Upgrade Gotchas&lt;/li&gt;
-&lt;/ul&gt;&lt;h2&gt;&lt;a href="#links" class="anchor" name="links"&gt;&lt;/a&gt;Links&lt;/h2&gt;
-&lt;p&gt;The following links are referenced in the presentation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Building OCI Images [&lt;a href="https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/#build-image"&gt;Maven&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/#build-image"&gt;Gradle&lt;/a&gt;]&lt;/li&gt;
-  &lt;li&gt;Packaging Layered Jars [&lt;a href="https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/#repackage-layers"&gt;Maven&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/#packaging-layered-jars"&gt;Gradle&lt;/a&gt;]&lt;/li&gt;
-  &lt;li&gt;Customizing Layers [&lt;a href="https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/#repackage-layers-configuration"&gt;Maven&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/#packaging-layers-configuration"&gt;Gradle&lt;/a&gt;]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#writing-the-dockerfile"&gt;Writing a Dockerfile&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.3-Release-Notes"&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-boot/blob/master/CONTRIBUTING.adoc"&gt;Contributing Instructions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
