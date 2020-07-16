@@ -5,7 +5,22 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-07-14T20:56:32Z</updated>
+  <updated>2020-07-15T11:57:21Z</updated>
+  <entry>
+    <title>Spring Initializr 0.9.0 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/15/spring-initializr-0-9-0-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2020-07-15:4131</id>
+    <updated>2020-07-15T11:57:21Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I¡¯m happy to announce that Spring Initializr 0.9.0 has been released and is now available from repo.spring.io and Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-io/initializr/releases/tag/v0.9.0"&gt;34 fixes, improvements and dependency upgrades&lt;/a&gt;.&lt;br/&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
+&lt;p&gt;For full &lt;a href="https://github.com/spring-io/initializr/wiki/Spring-Initializr-0.9-Release-Notes#upgrading-from-initializr-08"&gt;upgrade instructions&lt;/a&gt; and &lt;a href="https://github.com/spring-io/initializr/wiki/Spring-Initializr-0.9-Release-Notes#new-and-noteworthy"&gt;new and noteworthy&lt;/a&gt; features please see the &lt;a href="https://github.com/spring-io/initializr/wiki/Spring-Initializr-0.9-Release-Notes"&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-io/initializr"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/initializr/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/initializr/docs/0.9.0/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-initializr"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-io/initializr"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - July 14th, 2020</title>
     <link rel="alternate" href="https://spring.io/blog/2020/07/14/this-week-in-spring-july-14th-2020" />
@@ -996,25 +1011,6 @@ Artem&lt;/p&gt;
 &lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2020-06-18-470-release-incl-language-servers-version-1190"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2020-06-18-470-release-incl-language-servers-version-1190&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Tools 4.7.1 is scheduled to be released in late July 2020.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Nisha Kumar and Rose Judge on the Linux Foundation's project Tern</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/19/a-bootiful-podcast-nisha-kumar-and-rose-judge-on-the-linux-foundation-s-project-tern" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-06-19:4111</id>
-    <updated>2020-06-19T06:54:29Z</updated>
-    <content type="html">&lt;iframe title="Nisha Kumar and Rose Judge on the Linux Foundation's Tern" src="https://www.podbean.com/media/player/2fmu6-e05e01-pb?from=share&amp;skin=1&amp;share=1&amp;fonts=Helvetica&amp;download=1&amp;version=1&amp;vjs=1&amp;skin=1" height="315" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player"&gt;&lt;/iframe&gt;
-&lt;p&gt;Hi, Spring fans! In this installment &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Nisha Kumar and Rose Judge who work on the Linux Foundation&amp;rsquo;s project Tern. &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://www.linuxfoundation.org/blog/2019/12/tern-1-0-0-is-generally-available/"&gt;Tern from the Linux Foundation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Shift-left_testing"&gt;Shift Left testing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spdx.org/licenses/"&gt;SPDX&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spdx/spdx-maven-plugin"&gt;A Maven plugin supporting SPDX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
