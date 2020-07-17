@@ -3,7 +3,7 @@ package dp1;
 import java.util.Scanner;
 
 public class easy_bridge_num {
-	static final int mod = 1000000000;
+	static final int div = 1000000000;
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -18,13 +18,13 @@ public class easy_bridge_num {
 				else if(j == 9)		stair[i][j] = stair[i-1][j-1];
 				else				stair[i][j] = stair[i-1][j-1] + stair[i-1][j+1];
 				
-				stair[i][j] %= mod;
+				stair[i][j] %= div;
 			}
 		}
 		
 		long ans = 0;
 		for (int i = 0; i <= 9; i++)	ans += stair[n][i];
-		System.out.println(ans % mod);
+		System.out.println(ans % div);
 		
 		sc.close();
 	}
