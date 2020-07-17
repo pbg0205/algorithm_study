@@ -2,7 +2,7 @@ package dp1;
 
 import java.util.Scanner;
 
-public class binary_familiar {
+public class primary_number {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

@@ -7,6 +7,7 @@ public class easy_bridge_num {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		int n = Integer.parseInt(sc.nextLine());
 		long[][] stair = new long[n+1][10];
 		

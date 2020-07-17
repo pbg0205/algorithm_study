@@ -821,7 +821,7 @@ Artem&lt;/p&gt;
       <name>Mahmoud Ben Hassine</name>
     </author>
     <id>tag:spring.io,2020-06-26:4117</id>
-    <updated>2020-06-26T19:48:51Z</updated>
+    <updated>2020-06-26T19:48:00Z</updated>
     <content type="html">&lt;p&gt;On behalf of the Spring Batch team, I am pleased to announce that Spring Batch 4.3.0-M1 is now available from our &lt;a href="https://repo.spring.io/milestone/"&gt;milestone repository&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-s-new" class="anchor" name="what-s-new"&gt;&lt;/a&gt;What¡¯s new?&lt;/h2&gt;
 &lt;p&gt;This release is packed with new features, performance improvements, and bug fixes, as well as documentation and dependency updates! You can find the complete list of changes in the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/4.3.0-M1"&gt;release notes&lt;/a&gt;, but here are the major highlights:&lt;/p&gt;&lt;h2&gt;&lt;a href="#new-features" class="anchor" name="new-features"&gt;&lt;/a&gt;New features&lt;/h2&gt;&lt;h4&gt;&lt;a href="#1-new-synchronized-code-itemstreamwriter-code" class="anchor" name="1-new-synchronized-code-itemstreamwriter-code"&gt;&lt;/a&gt;1. New synchronized &lt;code&gt;ItemStreamWriter&lt;/code&gt;&lt;/h4&gt;
 &lt;p&gt;Similar to the &lt;code&gt;SynchronizedItemStreamReader&lt;/code&gt;, we added a &lt;code&gt;SynchronizedItemStreamWriter&lt;/code&gt;. This feature is useful in multi-threaded steps where concurrent threads need to be synchronized to not override each other&amp;rsquo;s writes.&lt;/p&gt;&lt;h4&gt;&lt;a href="#2-add-support-for-named-queries-in-code-jpapagingitemreader-code" class="anchor" name="2-add-support-for-named-queries-in-code-jpapagingitemreader-code"&gt;&lt;/a&gt;2. Add support for named queries in &lt;code&gt;JpaPagingItemReader&lt;/code&gt;&lt;/h4&gt;
@@ -873,7 +873,7 @@ Artem&lt;/p&gt;
 &lt;p&gt;All benchmarks have been performed on a Macbook Pro with 16Go RAM, 2.9 GHz Intel Core i7 CPU, MacOS Catalina 10.15.5, and Oracle JDK 1.8.0_201. You can find the source code of all benchmarks in the following links:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;repository-item-writer-benchmark: &lt;a href="https://github.com/benas/spring-batch-lab/tree/master/issues/gh3720"&gt;https://github.com/benas/spring-batch-lab/tree/master/issues/gh3720&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;repository-item-writer-benchmark: &lt;a href="https://github.com/benas/spring-batch-lab/tree/master/issues/gh3713"&gt;https://github.com/benas/spring-batch-lab/tree/master/issues/gh3713&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;mongo-item-writer-benchmark: &lt;a href="https://github.com/benas/spring-batch-lab/tree/master/issues/gh3713"&gt;https://github.com/benas/spring-batch-lab/tree/master/issues/gh3713&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/4.3.0-M1/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
