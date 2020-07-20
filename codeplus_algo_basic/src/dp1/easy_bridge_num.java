@@ -11,14 +11,15 @@ public class easy_bridge_num {
 		int n = Integer.parseInt(sc.nextLine());
 		long[][] stair = new long[n+1][10];
 		
-		for (int i = 1; i <= 9; i++)	stair[1][i] = 1;
-		for (int i = 2; i <= n; i++) {
-			for (int j = 0; j <= 9; j++) {
-				if(j == 0)			stair[i][j] = stair[i-1][j+1];
-				else if(j == 9)		stair[i][j] = stair[i-1][j-1];
-				else				stair[i][j] = stair[i-1][j-1] + stair[i-1][j+1];
+		for (int col = 1; col <= 9; col++)	stair[1][col] = 1;
+		
+		for (int row = 2; row <= n; row++) {
+			for (int col = 0; col <= 9; col++) {
+				if(col == 0)							stair[row][col] = stair[row-1][col+1];
+				else if(col == 9)						stair[row][col] = stair[row-1][col-1];
+				else									stair[row][col] = stair[row-1][col-1] + stair[row-1][col+1];
 				
-				stair[i][j] %= div;
+				stair[row][col] %= div;
 			}
 		}
 		
