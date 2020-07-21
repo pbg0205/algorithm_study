@@ -1,4 +1,4 @@
-package dp1;
+package dp1_practice;
 
 import java.io.BufferedReader;
 import java.io.IOException;
