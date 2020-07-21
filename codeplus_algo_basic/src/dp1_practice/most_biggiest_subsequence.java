@@ -21,21 +21,20 @@ public class most_biggiest_subsequence {
 		arr = new int[n+1];
 		dp = new int[n+1];
 		
-		for (int i = 1; i <= n; i++) {
-			arr[i] = Integer.parseInt(st.nextToken());
+		for (int idx = 1; idx <= n; idx++) {
+			arr[idx] = Integer.parseInt(st.nextToken());
 		}
 		
 		for (int right = 1; right <= n; right++) {
 			dp[right] = arr[right];
 			for (int left = 1; left < right; left++) {
-				if(arr[left] < arr[right] && dp[right] < dp[left] + arr[right]) {	
+				if(arr[left] < arr[right] && dp[right] < dp[left] + arr[right])	
 					dp[right] = dp[left] + arr[right];
-				}
 			}
 		}
 		
-		for (int i = 1; i <= n; i++)
-			if(max < dp[i])	max = dp[i];
+		for (int idx = 1; idx <= n; idx++)
+			if(max < dp[idx])	max = dp[idx];
 		
 		System.out.println(max);
 		
