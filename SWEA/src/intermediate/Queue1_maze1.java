@@ -3,7 +3,7 @@ package intermediate;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
+//bfs를 이용한 미로 출구 찾기
 public class Queue1_maze1 {
 	static int[] dx = {1, 0, -1, 0};
 	static int[] dy = {0, 1, 0, -1};
