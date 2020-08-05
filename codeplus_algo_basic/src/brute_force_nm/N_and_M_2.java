@@ -14,13 +14,13 @@ public class N_and_M_2 {
 		data = new int[N+1];
 		visited = new boolean[N+1];
 		
-		combination(1,0);
+		combination_dfs(1,0);
 		
 		
 		sc.close();
 	}
-
-	private static void combination(int start, int num) {
+	//재귀함수를 이용한 dfs방법
+	private static void combination_dfs(int start, int num) {
 		if(num == M) {
 			for (int i = 0; i < M; i++) {
 				System.out.print(data[i] + " ");
@@ -29,12 +29,14 @@ public class N_and_M_2 {
 			return;
 		}
 		
-		for (int i = start; i <= N; i++) {
-			if(!visited[i]) {
-				visited[i] = true;
-				data[num] = i;
-				combination(i+1, num+1);
-				visited[i] = false;
+		//깊은 depth 탐색 → 탈출 → 이전 depth 탐색 순으로 진행(dfs)
+		//시작 : start : combination 형태로 접근 가능
+		for (int idx = start; idx <= N; idx++) {
+			if(!visited[idx]) {
+				visited[idx] = true;
+				data[num] = idx;
+				combination_dfs(idx+1, num+1);
+				visited[idx] = false;
 			}
 		}
 		
