@@ -1,4 +1,4 @@
-package grapth1_practice;
+package graph1_practice;
 
 import java.io.BufferedReader;
 import java.io.IOException;
