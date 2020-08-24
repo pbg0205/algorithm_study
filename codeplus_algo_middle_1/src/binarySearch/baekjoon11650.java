@@ -9,10 +9,10 @@ import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 /*
- * @Problem		{수 이어 쓰기2(1790)}
+ * @Problem		{좌표 정렬하기(11650)}
  * @Author		{pbg0205}
  * @Create by	{08.24.2020}
- * @Time		{PM 06:51}
+ * @Time		{PM 07:37}
  * 
 */
 public class baekjoon11650 {
