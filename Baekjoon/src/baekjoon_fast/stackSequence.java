@@ -24,12 +24,13 @@ public class stackSequence {
 			int data = Integer.parseInt(sc.nextLine());
 			
 			while(count <= data) {
+			/* data와 값 일치 시까지, stack에 cnt 추가 */
 				stack.push(count);
 				count++;
 				result.add('+');
 			}
-			
 			if(stack.peek() == data) {
+			/* 데이터와 peek값 일치 시, 윗 값 하나 제거.*/
 				stack.pop();
 				result.add('-');
 			}else {
