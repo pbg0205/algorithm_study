@@ -6,12 +6,14 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 /*
- * problem		{에디터 (1406)}
- * author		{pbg0205}
- * Create by	{08.24.20}
+ * @Problem		{에디터 (1406)}
+ * @Author		{pbg0205}
+ * @Create by	{08.30.20}
 */
 public class baekjoon1406 {
+
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
 	public static void main(String[] args) throws Exception{
 		String str = br.readLine();
 		int n = Integer.parseInt(br.readLine());
@@ -22,8 +24,8 @@ public class baekjoon1406 {
 	
 	public static void editor(String str, int n) throws IOException {
 		StringBuilder sb = new StringBuilder();
-		Stack<Character> lStack = new Stack<>();
-		Stack<Character> rStack = new Stack<>();
+		Stack<Character> lStack = new Stack<>();/*커서 기준 왼쪽*/
+		Stack<Character> rStack = new Stack<>();/*커서 기준 오른쪽*/
 		
 		for (int i = 0; i < str.length(); i++)
 			lStack.push(str.charAt(i));
