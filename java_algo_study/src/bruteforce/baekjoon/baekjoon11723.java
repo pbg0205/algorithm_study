@@ -6,7 +6,7 @@ import java.io.*;
  * @Problem     집합(11723): https://www.acmicpc.net/problem/11723
  * @Author      pbg0205
  * @Created by  09.17.20
- * 
+ *
  */
 
 public class baekjoon11723 {
@@ -77,7 +77,7 @@ public class baekjoon11723 {
     /*toggle : 집합에 요소가 존재하면 제거, 아니면 element 추가*/
     private static int toggle(int bitSet, int element) {
         if(check(bitSet, element)){
-           return remove(bitSet, element);
+            return remove(bitSet, element);
         }
         return add(bitSet, element);
     }
