@@ -83,7 +83,7 @@ public class baekjooon1012 {
     }
 }
 
-class Location{
+class Location {
     int x;
     int y;
 
