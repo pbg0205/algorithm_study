@@ -1,10 +1,13 @@
-package codeplus.basic.brute_force;
-
+package baekjoon3085;
+/*
+ * @problem		사탕게임(3085) : https://www.acmicpc.net/problem/3085
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class candy_game {
+public class Main {
 	static char[][] data;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
