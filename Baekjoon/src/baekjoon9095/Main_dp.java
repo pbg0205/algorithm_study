@@ -1,8 +1,12 @@
-package codeplus.basic.dp1;
+package baekjoon9095;
+/*
+ * @problem		1, 2, 3 더하기(9095) : https://www.acmicpc.net/problem/9095
+ * @author		pbg0205
+ */
 
 import java.util.Scanner;
 
-public class sumOf123 {
+public class Main_dp {
 	static int[] sum_of_123 = new int[12];
 	
 	public static void main(String[] args) {
