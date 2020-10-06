@@ -1,4 +1,4 @@
-package codeplus.basic.graph1_practice;
+package baekjoon16947;
 /*
  * @problem		지하철 2호선(16947) : https://www.acmicpc.net/problem/16947
  * @author		pbg0205
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class subway_twoline {
+public class Main {
     //0: not visited
     //1: visited
     //2: cycle
