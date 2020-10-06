@@ -1,8 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon1699;
+/*
+ * @problem		제곱수의 합(1699) : https://www.acmicpc.net/problem/1699
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class sum_of_square {
+public class Main {
 	static final int max_num = 320;
 
 	public static void main(String[] args) {
