@@ -1,8 +1,12 @@
-package codeplus.basic.data_structure_ref;
+package baekjoon11655;
+/*
+ * @problem		ROT13(11655) : https://www.acmicpc.net/problem/11655
+ * @author		pbg0205
+ */
 
 import java.util.Scanner;
 
-public class ROT13 {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
