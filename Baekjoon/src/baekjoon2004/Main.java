@@ -1,8 +1,12 @@
-package codeplus.basic.math1;
-
+package baekjoon2004;
+/*
+ * @problem		조합 0의 개수(2004) : https://www.acmicpc.net/problem/2004
+ * @author		pbg0205
+ * @created by	09.23.20
+ */
 import java.util.Scanner;
 
-public class count_zero_from_combi {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		long n = sc.nextLong();
