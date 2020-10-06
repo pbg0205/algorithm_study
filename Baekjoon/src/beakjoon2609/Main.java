@@ -1,8 +1,11 @@
-package codeplus.basic.math1;
-
+package beakjoon2609;
+/*
+ * @problem		최대공약수와 최소공배수(2609) : https://www.acmicpc.net/problem/2609
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class gcd_and_lcm {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
