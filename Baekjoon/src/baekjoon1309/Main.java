@@ -1,8 +1,11 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon1309;
+/*
+ * @problem		동물원(1309) : https://www.acmicpc.net/problem/1309
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class zoo {
+public class Main {
 	
 	static final int div= 9901;
 	static int[][] dp;
