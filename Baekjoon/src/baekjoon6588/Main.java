@@ -1,9 +1,12 @@
-package codeplus.basic.math1;
-
+package baekjoon6588;
+/*
+ * @problem		골드바흐의 추측(6588) : https://www.acmicpc.net/problem/6588
+ * @author		pbg0205
+ */
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Goldbach_conjecture {
+public class Main {
 	
 	public static boolean[] is_prime;
 	
@@ -35,15 +38,3 @@ public class Goldbach_conjecture {
 		sc.close();
 	}
 }
-
-//시도1. 이중 for문
-//시도2. arraylist -> 생각해보니 어차피 시간복잡도가(O(n^2)이었다.
-//시도3. stack 사용하기
-//시도4. deque로 문제 풀기 -> deque : 
-/*
- * 1.양쪽을 poll해서 합 확인
- * 2.만약 test_num >= 합
- * 	2-1. 앞쪽 poll해서 값비교
- *  2-2. 뒤쪽 poll해서 값비교
- *3. 일치하면 출력(아니면, 둘다 poll) -> 계속 진행
- */
