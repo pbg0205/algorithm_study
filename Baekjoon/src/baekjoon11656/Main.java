@@ -1,8 +1,11 @@
-package codeplus.basic.data_structure_ref;
-
+package baekjoon11656;
+/*
+ * @problem		접미사 배열(11656) : https://www.acmicpc.net/problem/11656
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class surffix_array {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
