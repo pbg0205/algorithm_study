@@ -1,11 +1,11 @@
-package codeplus.basic.bfs;
+package baekjoon13913;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class hide_and_seek4 {
+public class Main {
 
 	static int n, k;
 
