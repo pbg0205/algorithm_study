@@ -1,8 +1,11 @@
-package codeplus.basic.brute_force_bitmask;
-
+package baekjoon11723;
+/*
+ * @problem		집합(11723) : https://www.acmicpc.net/problem/11723
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class set {
+public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		StringBuilder result = new StringBuilder();
