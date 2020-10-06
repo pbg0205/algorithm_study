@@ -1,11 +1,14 @@
-package codeplus.basic.brute_force_recur;
-
+package baekjoon14889;
+/*
+ * @problem		스타트와 링크(14889) : https://www.acmicpc.net/problem/14889
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class start_and_link {
+public class Main {
 	
 	static int[][] matches;
 	static boolean[] visited;
