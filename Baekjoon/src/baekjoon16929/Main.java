@@ -1,11 +1,14 @@
-package codeplus.basic.graph1_practice;
-
+package baekjoon16929;
+/*
+ * @problem		Two Dots(16929) : https://www.acmicpc.net/problem/16929
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class two_dot_br {
+public class Main {
 	
 	static int n,m;
 	
