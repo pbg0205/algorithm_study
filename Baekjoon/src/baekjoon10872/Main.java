@@ -1,8 +1,11 @@
-package codeplus.basic.math1;
-
+package baekjoon10872;
+/*
+ * @problem		팩토리얼(10872) : https://www.acmicpc.net/problem/10872
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class factorial {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		long n = Long.parseLong(sc.nextLine());
