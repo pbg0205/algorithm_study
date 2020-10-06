@@ -1,5 +1,8 @@
 package baekjoon14226;
-
+/*
+ * @problem		이모티콘(14226) : https://www.acmicpc.net/problem/14226
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
