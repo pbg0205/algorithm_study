@@ -4,7 +4,6 @@ package baekjoon17299;
  * @author		pbg0205
  */
 
-/
 import java.io.*;
 import java.util.Stack;
 import java.util.StringTokenizer;
