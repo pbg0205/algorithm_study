@@ -1,10 +1,13 @@
-package codeplus.basic.dp1;
-
+package baekjoon14002;
+/*
+ * @problem		가장 긴 증가하는 부분 수열4(14002) : https://www.acmicpc.net/problem/14002
+ * @author		pbg0205
+ */
 import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class long_increasing_sequence4 {
+public class Main {
 	
 	static int[] arr;
 	static int[] v;
