@@ -1,8 +1,11 @@
-package codeplus.basic.brute_force_recur;
-
+package baekjoon9095;
+/*
+ * @problem		1, 2, 3 더하기(9095) : https://www.acmicpc.net/problem/9095
+ * @author		pbg0205
+ */
 import java.io.*;
 
-public class sum_of_123_recur {
+public class Main {
 	static int tc;
 	static int num[];
 	public static void main(String[] args) throws IOException{
