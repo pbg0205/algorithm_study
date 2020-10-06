@@ -1,8 +1,12 @@
-package codeplus.basic.brute_force_nm;
+package baekjoon15649;
+/*
+ * @problem		N과 M(1)(15649) : https://www.acmicpc.net/problem/15649
+ * @author		pbg0205
+ */
 
 import java.util.Scanner;
 
-public class N_and_M_1 {
+public class Main {
 	static int n, m;
 	static int[] data;
 	static boolean[] visited;
