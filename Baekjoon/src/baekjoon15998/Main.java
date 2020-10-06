@@ -1,8 +1,11 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon15998;
+/*
+ * @problem		1, 2, 3더하기3(15988) : https://www.acmicpc.net/problem/15988
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class sumOf123_3_2 {
+public class Main {
 	static long div = 1000000009;
 	static long [] dp = new long[1000001];
 	
