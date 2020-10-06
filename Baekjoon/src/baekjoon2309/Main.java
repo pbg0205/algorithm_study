@@ -1,9 +1,12 @@
-package codeplus.basic.brute_force;
-
+package baekjoon2309;
+/*
+ * @problem		일곱 난쟁이(2309) : https://www.acmicpc.net/problem/2309
+ * @author		pbg0205
+ */
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class seven_dwarfs {
+public class Main {
 	static int[] dwarf = new int[10];
 	
 	public static void main(String[] args) {
