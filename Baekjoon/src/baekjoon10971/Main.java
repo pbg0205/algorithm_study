@@ -1,9 +1,12 @@
-package codeplus.basic.brute_force_permutation;
-
+package baekjoon10971;
+/*
+ * @problem		외판원순회(10971) : https://www.acmicpc.net/problem/10973
+ * @author		pbg0205
+ */
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class TSP {
+public class Main {
 
 	static int[][] map;
 	static int[] path;
