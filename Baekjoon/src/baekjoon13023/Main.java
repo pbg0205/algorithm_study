@@ -1,12 +1,15 @@
-package codeplus.basic.graph;
-
+package baekjoon13023;
+/*
+ * @problem		ABCDE(13023) : https://www.acmicpc.net/problem/13023
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class ABCDE {
+public class Main {
 	static ArrayList<Integer>[] adjacent;
 	static boolean[] visited;
 	static boolean isAvailable;
