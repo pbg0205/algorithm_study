@@ -1,4 +1,4 @@
-package codeplus.basic.bfs;
+package baekjoon14226;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class emoticon {
+public class Main {
 
 	static int s;
 	static boolean[][] visited = new boolean[2002][2002];
