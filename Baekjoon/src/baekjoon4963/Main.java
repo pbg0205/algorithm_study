@@ -1,5 +1,8 @@
-package codeplus.basic.graph;
-
+package baekjoon4963;
+/*
+ * @problem		섬의 개수(4963) : https://www.acmicpc.net/problem/4963
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class number_of_island {
+public class Main {
 	static int island_cnt;
 	static int col, row;
 	static int map[][];
