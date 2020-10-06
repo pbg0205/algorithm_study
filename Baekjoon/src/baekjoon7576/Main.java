@@ -1,13 +1,12 @@
-package codeplus.basic.graph;
+package baekjoon7576;
+/*
+ * @problem		토마토(7576) : https://www.acmicpc.net/problem/7576
+ * @author		pbg0205
+ */
+import java.io.*;
+import java.util.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
-
-public class tomato {
+public class Main {
 
 	static int m, n;
 	static int[][] map;
