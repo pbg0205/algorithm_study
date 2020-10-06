@@ -1,8 +1,11 @@
-package codeplus.basic.math1_practice;
-
+package baekjoon1373;
+/*
+ * @problem		2진수 8진수(1373) : https://www.acmicpc.net/problem/1373
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class binary_to_oxa {
+public class Main {
 	   public static void main(String args[]) {
 	        Scanner sc = new Scanner(System.in);
 	        String s = sc.nextLine();
