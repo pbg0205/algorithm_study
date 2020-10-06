@@ -1,8 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon16194;
+/*
+ * @problem		카드 구매하기2(16194) : https://www.acmicpc.net/problem/16194
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class buy_card2 {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
