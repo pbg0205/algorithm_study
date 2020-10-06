@@ -1,9 +1,12 @@
-package codeplus.basic.brute_force_permutation;
-
+package baekjoon10819;
+/*
+ * @problem		차이를 최대로(10819) : https://www.acmicpc.net/problem/10973
+ * @author		pbg0205
+ */
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class differenceMax {
+public class Main {
 
 	static int[] data;
 	static int N;
