@@ -1,8 +1,11 @@
-package codeplus.basic.brute_force;
-
+package baekjoon14500;
+/*
+ * @problem		테트로미노(14500) : https://www.acmicpc.net/problem/14500
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class tetromino {
+public class Main {
 	static int n, m;
 	static int ans = 0;
 	
