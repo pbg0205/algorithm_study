@@ -1,5 +1,8 @@
-package codeplus.basic.graph;
-
+package baekjoon7562;
+/*
+ * @problem		나이트의 이동(7562) : https://www.acmicpc.net/problem/7562
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class knight_movement {
+public class Main {
 	
 	static int l;
 	
