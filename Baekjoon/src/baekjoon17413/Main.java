@@ -1,5 +1,8 @@
-package codeplus.basic.data_structure1_practice;
-
+package baekjoon17413;
+/*
+ * @problem		단어뒤집기2(17413) : https://www.acmicpc.net/problem/17413
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class word_reverse2 {
+public class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
