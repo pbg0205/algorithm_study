@@ -1,12 +1,15 @@
-package codeplus.basic.dp1;
-
+package Main;
+/*
+ * @problem		가장 긴 증가하는 부분 수열(11053) : https://www.acmicpc.net/problem/11053
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class long_increasing_sequence {
+public class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
