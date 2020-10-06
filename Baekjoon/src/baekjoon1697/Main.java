@@ -1,5 +1,8 @@
 package baekjoon1697;
-
+/*
+ * @problem		숨바꼭질(1697) : https://www.acmicpc.net/problem/1697
+ * @author		pbg0205
+ */
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
