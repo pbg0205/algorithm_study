@@ -1,8 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon2193;
+/*
+ * @problem		이친수(2193) : https://www.acmicpc.net/problem/2193
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class primary_number {
+public class Main {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
