@@ -1,9 +1,12 @@
-package codeplus.basic.data_structure1;
-
+package baekjoon10828;
+/*
+ * @problem		스택(10828) : https://www.acmicpc.net/problem/10828
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 import java.util.Stack;
 
-public class stack {
+public class Main {
 	public static void main(String[] args) {
 		Stack<Integer> s = new Stack<>();
 		Scanner sc = new Scanner(System.in);
