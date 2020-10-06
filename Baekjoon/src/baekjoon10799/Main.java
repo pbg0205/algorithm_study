@@ -1,11 +1,14 @@
-package codeplus.basic.data_structure1_practice;
-
+package baekjoon10799;
+/*
+ * @problem		쇠막대기(10799) : https://www.acmicpc.net/problem/10799
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class Fe_stick {
+public class Main {
 	public static void main(String[] args) throws IOException  {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
