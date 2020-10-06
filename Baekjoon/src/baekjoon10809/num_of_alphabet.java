@@ -1,5 +1,10 @@
-package codeplus.basic.data_structure_ref;
+package baekjoon10809;
+/*
+ * @problem		알파벳 찾기(10809) : https://www.acmicpc.net/problem/10809
+ * @author		pbg0205
+ */
 
+/
 import java.util.Scanner;
 
 public class num_of_alphabet {
