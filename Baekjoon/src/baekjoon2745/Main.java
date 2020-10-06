@@ -1,9 +1,11 @@
-package codeplus.basic.math1_ref;
-
+package baekjoon2745;
+/*
+ * @problem		진법 변환(2745) : https://www.acmicpc.net/problem/2745
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-//문제 : 진법 변환(2745)
-public class base_transformation {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.next();
