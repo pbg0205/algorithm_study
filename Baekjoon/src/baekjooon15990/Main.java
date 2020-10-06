@@ -1,9 +1,12 @@
-package codeplus.basic.dp1;
-
+package baekjooon15990;
+/*
+ * @problem		1, 2, 3 더하기(15990) : https://www.acmicpc.net/problem/15990
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class sumOf123_5 {
+public class Main {
 	    static int[][] dp;
 	    static final int div = 1000000009;
 	    static final int limit = 100000; //limit: 정수 n의 최댓값
