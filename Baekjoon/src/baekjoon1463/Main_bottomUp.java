@@ -1,10 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon1463;
+/*
+ * @problem		1만들기(1463) : https://www.acmicpc.net/problem/1463
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-//문제: 1만들기 (1463)
-//-> bottomUp방식 : 제일 작은 무넺부터 차례대로 풀면서 정답을 구해나가는 과정
-public class make_1_bottomUp {
+public class Main_bottomUp {
     static int[] d;
 	    
     public static void main(String[] args) {
