@@ -1,5 +1,8 @@
 package baekjoon13913;
-
+/*
+ * @problem		숨바꼭질4(13913) : https://www.acmicpc.net/problem/13913
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
