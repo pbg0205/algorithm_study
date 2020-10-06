@@ -1,11 +1,14 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon11055;
+/*
+ * @problem		가장 큰 증가 부분 수열(11055) : https://www.acmicpc.net/problem/11055
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class most_biggiest_subsequence {
+public class Main {
 	static int [] arr;
 	static int [] dp;
 	
