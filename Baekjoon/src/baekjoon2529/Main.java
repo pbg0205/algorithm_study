@@ -1,5 +1,8 @@
-package codeplus.basic.brute_force_recur;
-
+package baekjoon2529;
+/*
+ * @problem		부등호(2529) : https://www.acmicpc.net/problem/10973
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Inequality {
+public class Main {
 	
 	static int[] number;
 	static boolean[] visited;
