@@ -1,4 +1,9 @@
-package codeplus.basic.brute_force_recur;
+package baekjoon1759;
+/*
+ * @problem		암호 만들기(1759) : https://www.acmicpc.net/problem/1759
+ * @author		pbg0205
+ */
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +14,7 @@ import java.util.StringTokenizer;
 //2. 최소 두개의 자음
 //3. 알파벳이 암호에서 증가하는 순서(사전 순)
 
-public class make_password {
+public class Main {
 	
 	static char[] data;
 	static int L, C;
