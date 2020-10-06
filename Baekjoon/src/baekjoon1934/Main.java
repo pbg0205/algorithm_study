@@ -1,9 +1,12 @@
-package codeplus.basic.math1;
-
+package baekjoon1934;
+/*
+ * @problem		최소공배수(1934) : https://www.acmicpc.net/problem/1934
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
 //유클리드 호제법을 이용한 풀이
-public class lcm {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
