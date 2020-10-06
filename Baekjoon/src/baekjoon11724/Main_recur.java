@@ -1,12 +1,15 @@
-package codeplus.basic.graph;
-
+package baekjoon11724;
+/*
+ * @problem		연결 요소의 개수(11724) : https://www.acmicpc.net/problem/11724
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class linked_element_num_recur {
+public class Main_recur {
 	
 	static int[][] map;
 	static boolean[] visited;
