@@ -1,9 +1,12 @@
-package codeplus.basic.brute_force_permutation;
-
+package baekjoon10973;
+/*
+ * @problem		이전 순열(10973) : https://www.acmicpc.net/problem/10973
+ * @author		pbg0205
+ */
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class prev_permutation {
+public class Main {
 	static int[] data;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
