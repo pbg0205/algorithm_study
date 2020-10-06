@@ -1,10 +1,15 @@
-package codeplus.basic.data_structure1_practice;
+package baekjoon17299;
+/*
+ * @problem		오등큰수(17299) : https://www.acmicpc.net/problem/17299
+ * @author		pbg0205
+ */
 
+/
 import java.io.*;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class NGF {
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
