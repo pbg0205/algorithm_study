@@ -1,11 +1,14 @@
-package codeplus.basic.data_structure1;
-
+package baekjoon9093;
+/*
+ * @problem		단어뒤집기(9093) : https://www.acmicpc.net/problem/9093
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class word_reverse {
+public class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int test_case = Integer.parseInt(br.readLine());
