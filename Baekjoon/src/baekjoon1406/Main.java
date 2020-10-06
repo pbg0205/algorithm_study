@@ -1,9 +1,14 @@
-package codeplus.basic.data_structure1;
+package baekjoon1406;
+/*
+ * @problem		에디터(1406) : https://www.acmicpc.net/problem/1406
+ * @author		pbg0205
+ */
+
 
 import java.io.*;
-import java.util.Stack;
+import java.util.*;
 
-public class editor_stack {
+public class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
