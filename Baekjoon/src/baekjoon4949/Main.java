@@ -1,4 +1,4 @@
-package stack;
+package baekjoon4949;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,7 +12,7 @@ import java.util.Stack;
  * author		{pbg0205}
  * Create by	{08.24.20}
 */
-public class baekjoon4949 {
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
