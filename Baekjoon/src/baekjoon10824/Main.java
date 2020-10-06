@@ -1,8 +1,13 @@
-package codeplus.basic.data_structure_ref;
+package baekjoon10824;
+/*
+ * @problem		네 수(10824) : https://www.acmicpc.net/problem/10824
+ * @author		pbg0205
+ */
 
+/
 import java.util.Scanner;
 
-public class four_num {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
