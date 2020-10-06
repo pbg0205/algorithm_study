@@ -1,11 +1,15 @@
-package codeplus.basic.data_structure_ref;
+package baekjoon1918;
+/*
+ * @problem		후기 표기식(1918) : https://www.acmicpc.net/problem/1918
+ * @author		pbg0205
+ */
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class postOrder_stack {
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String inorder = br.readLine();
