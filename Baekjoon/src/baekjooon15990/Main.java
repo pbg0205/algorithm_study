@@ -1,6 +1,6 @@
 package baekjooon15990;
 /*
- * @problem		1, 2, 3 더하기(15990) : https://www.acmicpc.net/problem/15990
+ * @problem		1, 2, 3 더하기5(15990) : https://www.acmicpc.net/problem/15990
  * @author		pbg0205
  */
 import java.io.BufferedReader;
