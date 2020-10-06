@@ -1,12 +1,15 @@
-package codeplus.basic.graph;
-
+package baekjoon1707;
+/*
+ * @problem		이분 그래프(1707) : https://www.acmicpc.net/problem/1707
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class BipartiteGraph {
+public class Main {
 	
 	static int[][] map;
 	static int[] visited_num;
