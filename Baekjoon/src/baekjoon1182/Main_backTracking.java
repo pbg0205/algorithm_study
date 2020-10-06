@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon1182;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  * @Author      pbg0205
  * @Created by  09.19.20
  */
-public class baekjoon1182_backtracking {
+public class Main_backTracking {
 
     static int[] arr;
     static int N, S;

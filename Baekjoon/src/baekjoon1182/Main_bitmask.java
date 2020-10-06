@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon1182;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  * @Author      pbgu0205
  * @Created by  09.19.20
  */
-public class baekjoon1182_bitmask {
+public class Main_bitmask {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
