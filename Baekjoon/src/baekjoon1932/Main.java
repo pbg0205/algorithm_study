@@ -1,11 +1,14 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon1932;
+/*
+ * @problem		정수 삼각형(1932) : https://www.acmicpc.net/problem/1932
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class integer_triangle {
+public class Main {
 	static int arr[][];
 	static int dp[][];
 	
