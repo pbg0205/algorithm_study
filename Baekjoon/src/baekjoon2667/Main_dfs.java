@@ -1,12 +1,12 @@
-package codeplus.basic.graph;
+package baekjoon2667;
+/*
+ * @problem		단지번호붙이기(2667) : https://www.acmicpc.net/problem/2667
+ * @author		pbg0205
+ */
+import java.io.*;
+import java.util.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Collections;
-import java.util.LinkedList;
-
-public class complex_num_dfs {
+public class Main_dfs {
 	
 	static int[] dx = {1, 0, -1, 0};
 	static int[] dy = {0, 1, 0, -1};
