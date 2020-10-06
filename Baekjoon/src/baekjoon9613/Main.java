@@ -1,9 +1,12 @@
-package codeplus.basic.math1_practice;
-
+package baekjoon9613;
+/*
+ * @problem		GCD합(9613) : https://www.acmicpc.net/problem/9613
+ * @author		pbg0205
+ */
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class gcd_sum {
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
