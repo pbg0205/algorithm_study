@@ -3,7 +3,7 @@ package two_pointer;
 import java.io.*;
 import java.util.*;
 /*
- * @problem     두 용액(2470)
+ * @problem     두 용액(2470) : https://www.acmicpc.net/problem/2470
  * @author      pbg0205
  * @created by  10.03.20
  */
