@@ -1,11 +1,14 @@
-package codeplus.basic.brute_force;
-
+package baekjoon15661;
+/*
+ * @problem		링크와스타트(15661) : https://www.acmicpc.net/problem/15661
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class link_and_start {
+public class Main {
 	static int n;
 	static boolean[] visited;
 	static int [][] data;
