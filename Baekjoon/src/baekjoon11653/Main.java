@@ -1,10 +1,12 @@
-package codeplus.basic.math1_ref;
-
+package baekjoon11653;
+/*
+ * @problem		소인수분해(11653) : https://www.acmicpc.net/problem/11653
+ * @author		pbg0205
+ */
 import java.util.Arrays;
 import java.util.Scanner;
 
-//문제 : 소인수분해(11653)
-public class prime_factorization {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
