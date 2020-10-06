@@ -1,4 +1,4 @@
-package codeplus.basic.bfs;
+package baekjoon13549;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class seek_and_hide3 {
+public class Main {
 	
 	static int n, k;
 	static int min;
