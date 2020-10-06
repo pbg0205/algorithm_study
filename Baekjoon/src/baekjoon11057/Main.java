@@ -1,8 +1,11 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon11057;
+/*
+ * @problem		오르막 수(11057) : https://www.acmicpc.net/problem/11057
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class inclining_num {
+public class Main {
 	
 	static final int div = 10007;
 	static int[][] dp;
