@@ -1,8 +1,11 @@
-package codeplus.basic.data_structure_ref;
-
+package baekjoon2743;
+/*
+ * @problem		단어 길이 재기(2743) : https://www.acmicpc.net/problem/2743
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class word_length {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
