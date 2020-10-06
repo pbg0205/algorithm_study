@@ -1,11 +1,14 @@
-package codeplus.basic.graph;
-
+package baekjoon1260;
+/*
+ * @problem		DFS와 BFS(1260) : https://www.acmicpc.net/problem/1260
+ * @author		pbg0205
+ */
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class DFS_BFS {
+public class Main {
 
 	static int[][] check;
 	static boolean[] checked;
