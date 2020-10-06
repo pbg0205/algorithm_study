@@ -1,9 +1,12 @@
-package codeplus.basic.data_structure1;
-
+package baekjoon9012;
+/*
+ * @problem		괄호(9012) : https://www.acmicpc.net/problem/9012
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 import java.util.Stack;
 
-public class bracket {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int test_case = Integer.parseInt(sc.nextLine());
