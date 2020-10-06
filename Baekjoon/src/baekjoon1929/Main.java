@@ -1,12 +1,12 @@
-package codeplus.basic.math1;
+package baekjoon1929;
+/*
+ * @problem		소수 구하기(1929) : https://www.acmicpc.net/problem/1929
+ * @author		pbg0205
+ */
+import java.io.*;
+import java.util.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
-public class find_prime2 {
+public class Main {
 	
 	public static boolean[] is_prime;
 	
