@@ -1,9 +1,12 @@
-package codeplus.basic.math1;
-
+package baekjoon1978;
+/*
+ * @problem		소수 찾기(1978) : https://www.acmicpc.net/problem/1978
+ * @author		pbg0205
+ * @created by	09.23.20
+ */
 import java.util.Scanner;
 
-//주어진 범위 안에 소수의 갯수를 구하는 문제
-public class find_prime {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
