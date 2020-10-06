@@ -1,11 +1,14 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon9465;
+/*
+ * @problem		스티커(9465) : https://www.acmicpc.net/problem/9465
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Sticker {
+public class Main {
 	static int[][] data;
 	static int[][] dp;
 	
