@@ -1,8 +1,11 @@
-package codeplus.basic.dp1_practice;
-
+package baekjoon2156;
+/*
+ * @problem		포도주 시식(2156) : https://www.acmicpc.net/problem/2156
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class Grape_Alcohol {
+public class Main {
 	static int[] arr;
 	static int[] dp;
 	public static void main(String[] args){
