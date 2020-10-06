@@ -1,11 +1,14 @@
-package codeplus.basic.brute_force;
-
+package baekjoon1107;
+/*
+ * @problem		리모컨(1107) : https://www.acmicpc.net/problem/1107
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class remote_controller {
+public class Main {
 	static boolean[] isBroken = new boolean[10];
 	
 	
