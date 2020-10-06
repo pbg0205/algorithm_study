@@ -1,8 +1,11 @@
-package codeplus.basic.brute_force;
-
+package baekjoon1476;
+/*
+ * @problem		날짜계산(1476) : https://www.acmicpc.net/problem/1476
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class cal_date {
+public class Main {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		
