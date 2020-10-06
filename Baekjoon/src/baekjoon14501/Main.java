@@ -1,11 +1,14 @@
-package codeplus.basic.brute_force_recur;
-
+package baekjoon14501;
+/*
+ * @problem		퇴사(14501) : https://www.acmicpc.net/problem/14501
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class resign {
+public class Main {
 
 	static int[] days, cost;
 	static int N, max;
