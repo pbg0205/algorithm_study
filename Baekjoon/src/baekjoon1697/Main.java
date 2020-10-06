@@ -1,11 +1,11 @@
-package codeplus.basic.bfs;
+package baekjoon1697;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class hide_and_seek {
+public class Main {
 	public static void main(String args[]) throws Exception {
 	        Scanner sc = new Scanner(System.in);
 	        
