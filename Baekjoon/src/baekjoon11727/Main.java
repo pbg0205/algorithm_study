@@ -1,8 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon11727;
+/*
+ * @problem		2xN타일링2(11727) : https://www.acmicpc.net/problem/11727
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class n2_tiling_2 {
+public class Main {
 	static int[] d = new int[1001];
 	
 	public static void main(String[] args) {
