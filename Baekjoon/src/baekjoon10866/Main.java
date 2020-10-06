@@ -1,10 +1,14 @@
-package codeplus.basic.data_structure1;
+package baekjoon10866;
+/*
+ * @problem		덱(10866) : https://www.acmicpc.net/problem/10866
+ * @author		pbg0205
+ */
 
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class deque_test {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Deque<Integer> deque = new LinkedList<>();
