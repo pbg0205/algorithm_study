@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon2098;
 
 /*
  * @Problem     외판원 순회(2098) : https://www.acmicpc.net/problem/7568
@@ -10,7 +10,7 @@ package bruteforce.baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class baekjoon2098 {
+public class Main {
 
     static int[][] map = new int[16][16];
     static int[][] dp = new int[16][1<<16];
