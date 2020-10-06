@@ -1,8 +1,14 @@
-package codeplus.basic.data_structure_ref;
+package baekjoon10820;
+/*
+ * @problem		문자열 분석(10820): https://www.acmicpc.net/problem/10820
+ * @author		pbg0205
+ */
+
+/
 
 import java.util.Scanner;
 
-public class analysis_str {
+public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
