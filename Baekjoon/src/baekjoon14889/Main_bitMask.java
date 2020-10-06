@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon14889;
 
 /*
  * @Problem    스타트와 링크(14889)       https://www.acmicpc.net/problem/14889
@@ -10,7 +10,7 @@ package bruteforce.baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class baekjoon14889_bitmask1 {
+public class Main_bitMask {
 
     static int n;
 
