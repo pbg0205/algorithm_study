@@ -1,8 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon2225;
+/*
+ * @problem		합분해(2225) : https://www.acmicpc.net/problem/2225
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class Dividing_Sum {
+public class Main {
 	static final long div = 1000000000;
 	static int[][] dp;
 	public static void main(String[] args) {
