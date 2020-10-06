@@ -1,9 +1,12 @@
-package codeplus.basic.data_structure1_practice;
-
+package baekjoon17298;
+/*
+ * @problem     오큰수(17298) : https://www.acmicpc.net/problem/17298
+ * @author      pbg0205
+ */
 import java.io.*;
 import java.util.Stack;
 
-public class NGE{
+public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));// 리더 생성
         int n = Integer.parseInt(bf.readLine());// 사이즈 입력
