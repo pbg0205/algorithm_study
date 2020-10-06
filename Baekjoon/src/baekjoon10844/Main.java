@@ -1,8 +1,11 @@
-package codeplus.basic.dp1;
-
+package baekjoon10844;
+/*
+ * @problem		쉬운 계단 수(10844) : https://www.acmicpc.net/problem/10844
+ * @author		pbg0205
+ */
 import java.util.Scanner;
 
-public class easy_bridge_num {
+public class Main {
 	static final int div = 1000000000;
 	
 	public static void main(String[] args) {
