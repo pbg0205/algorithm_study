@@ -1,8 +1,11 @@
-package codeplus.basic.brute_force_permutation;
-
+package baekjoon10974;
+/*
+ * @problem		모든 순열(10974)
+ * @author		pbg0205
+ */
 import java.io.*;
 
-public class all_permutation {
+public class Main {
 	
 	static int[] data;
 	static int N;
