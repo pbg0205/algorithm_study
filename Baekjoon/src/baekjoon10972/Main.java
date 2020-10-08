@@ -6,7 +6,7 @@ package baekjoon10972;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	static int[] data;
 	static int N;
 	public static void main(String[] args) throws IOException{
