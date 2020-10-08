@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main {
+class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
