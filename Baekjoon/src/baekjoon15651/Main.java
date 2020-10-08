@@ -3,12 +3,10 @@ package baekjoon15651;
  * @probelm		N과 M(3) : https://www.acmicpc.net/problem/15649
  * @author		pbg0205
  */
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*
 
-public class Main {
+class Main {
 	static int N,M;
 	static int[] data;
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
