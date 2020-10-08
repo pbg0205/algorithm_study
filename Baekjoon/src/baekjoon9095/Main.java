@@ -5,7 +5,7 @@ package baekjoon9095;
  */
 import java.io.*;
 
-public class Main {
+class Main {
 	static int tc;
 	static int num[];
 	public static void main(String[] args) throws IOException{
