@@ -11,7 +11,7 @@ import java.util.Stack;
  * @Create by	08.26.2020
  * 
  */
-public class Main {
+class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
