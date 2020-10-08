@@ -6,7 +6,7 @@ package baekjoon7576;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+class Main {
 
 	static int m, n;
 	static int[][] map;
