@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	public static void main(String args[]) throws Exception {
 	        Scanner sc = new Scanner(System.in);
 	        
