@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	static int island_cnt;
 	static int col, row;
 	static int map[][];
