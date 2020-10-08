@@ -6,7 +6,7 @@ package baekjoon17298;
 import java.io.*;
 import java.util.Stack;
 
-public class Main {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));// 리더 생성
         int n = Integer.parseInt(bf.readLine());// 사이즈 입력
