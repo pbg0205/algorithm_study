@@ -6,7 +6,7 @@ package baekjoon6588;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	
 	public static boolean[] is_prime;
 	
