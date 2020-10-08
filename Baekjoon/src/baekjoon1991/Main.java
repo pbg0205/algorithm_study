@@ -8,7 +8,7 @@ import java.util.*;
  * @author      pbg0205
  * @created by  10.05.20
  */
-public class Main {
+class Main {
     static Map<Character, char[]> tree = new HashMap<>();
     static StringBuilder sb = new StringBuilder();
 
