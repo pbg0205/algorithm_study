@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	static int[][] data;
 	static int[][] dp;
 	
