@@ -4,10 +4,9 @@ package baekjoon10809;
  * @author		pbg0205
  */
 
-/
 import java.util.Scanner;
 
-public class num_of_alphabet {
+class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
