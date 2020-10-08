@@ -5,7 +5,7 @@ package baekjoon1309;
  */
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	
 	static final int div= 9901;
 	static int[][] dp;
