@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	static ArrayList<Integer>[] adjacent;
 	static boolean[] visited;
 	static boolean isAvailable;
