@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class maze_search {
+class Main {
 
 	static int n, m;
 	static int moving_cnt;
