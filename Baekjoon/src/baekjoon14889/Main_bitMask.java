@@ -10,7 +10,7 @@ package baekjoon14889;
 import java.io.*;
 import java.util.*;
 
-public class Main_bitMask {
+class Main_bitMask {
 
     static int n;
 
