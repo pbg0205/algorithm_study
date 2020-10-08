@@ -5,7 +5,7 @@ package baekjoon15998;
  */
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	static long div = 1000000009;
 	static long [] dp = new long[1000001];
 	
