@@ -5,7 +5,7 @@ package baekjoon10844;
  */
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	static final int div = 1000000000;
 	
 	public static void main(String[] args) {
