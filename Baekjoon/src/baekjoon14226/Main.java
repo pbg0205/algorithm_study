@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main {
+class Main {
 
 	static int s;
 	static boolean[][] visited = new boolean[2002][2002];
