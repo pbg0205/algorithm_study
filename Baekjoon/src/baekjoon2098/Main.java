@@ -10,7 +10,7 @@ package baekjoon2098;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+class Main {
 
     static int[][] map = new int[16][16];
     static int[][] dp = new int[16][1<<16];
