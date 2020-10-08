@@ -5,7 +5,7 @@ package baekjoon11727;
  */
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	static int[] d = new int[1001];
 	
 	public static void main(String[] args) {
