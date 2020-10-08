@@ -6,7 +6,7 @@ package baekjoon1929;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+class Main {
 	
 	public static boolean[] is_prime;
 	
