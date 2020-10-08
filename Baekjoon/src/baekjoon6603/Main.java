@@ -1,11 +1,11 @@
 package baekjoon6603;
 /*
- * @problem		로또(6603) : https://www.acmicpc.net/problem/10973
+ * @problem		로또(6603) : https://www.acmicpc.net/problem/6603
  * @author		pbg0205
  */
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	
 	public static void main(String[] args){
 		Scanner sc =new Scanner(System.in);
