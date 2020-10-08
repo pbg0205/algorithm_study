@@ -6,7 +6,7 @@ package baekjoon9095;
 
 import java.util.Scanner;
 
-public class Main_dp {
+class Main_dp {
 	static int[] sum_of_123 = new int[12];
 	
 	public static void main(String[] args) {
