@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 //2. 최소 두개의 자음
 //3. 알파벳이 암호에서 증가하는 순서(사전 순)
 
-public class Main {
+class Main {
 	
 	static char[] data;
 	static int L, C;
