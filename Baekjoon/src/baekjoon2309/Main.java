@@ -6,7 +6,7 @@ package baekjoon2309;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	static int[] dwarf = new int[10];
 	
 	public static void main(String[] args) {
