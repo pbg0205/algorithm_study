@@ -1,6 +1,6 @@
 package baekjoon11725;
 /*
- * @Problem     트리의 부모 찾기(11725)
+ * @Problem     트리의 부모 찾기(11725) : https://www.acmicpc.net/problem/11725
  * @Author      pbg0205
  * @Created by  09.07.20
  */
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
