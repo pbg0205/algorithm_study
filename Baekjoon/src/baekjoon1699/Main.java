@@ -5,7 +5,7 @@ package baekjoon1699;
  */
 import java.util.Scanner;
 
-public class Main {
+class Main {
 	static final int max_num = 320;
 
 	public static void main(String[] args) {
