@@ -1,10 +1,10 @@
 package baekjoon15651;
 /*
- * @probelm		N과 M(3) : https://www.acmicpc.net/problem/15649
+ * @probelm		N과 M(3)(15651) : https://www.acmicpc.net/problem/15651
  * @author		pbg0205
  */
 import java.io.*;
-import java.util.*
+import java.util.*;
 
 class Main {
 	static int N,M;
