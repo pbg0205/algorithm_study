@@ -1,11 +1,11 @@
 package baekjoon10974;
 /*
- * @problem		모든 순열(10974)
+ * @problem		모든 순열(10974) : https://www.acmicpc.net/problem/10974
  * @author		pbg0205
  */
 import java.io.*;
 
-public class Main {
+class Main {
 	
 	static int[] data;
 	static int N;
