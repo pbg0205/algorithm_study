@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	
 	static int[][] map;
 	static boolean[] visited;
