@@ -6,7 +6,7 @@ package baekjoon10971;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 
 	static int[][] map;
 	static int[] path;
