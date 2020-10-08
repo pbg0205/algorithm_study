@@ -5,7 +5,7 @@ package baekjoon1463;
  */
 import java.util.Scanner;
 
-public class Main_bottomUp {
+class Main_bottomUp {
     static int[] d;
 	    
     public static void main(String[] args) {
