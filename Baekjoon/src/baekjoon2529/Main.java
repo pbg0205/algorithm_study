@@ -1,6 +1,6 @@
 package baekjoon2529;
 /*
- * @problem		부등호(2529) : https://www.acmicpc.net/problem/10973
+ * @problem		부등호(2529) : https://www.acmicpc.net/problem/2529
  * @author		pbg0205
  */
 import java.io.BufferedReader;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	
 	static int[] number;
 	static boolean[] visited;
