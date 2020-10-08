@@ -6,7 +6,7 @@ package baekjoon1934;
 import java.util.Scanner;
 
 //유클리드 호제법을 이용한 풀이
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
