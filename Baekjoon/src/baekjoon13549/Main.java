@@ -1,5 +1,8 @@
 package baekjoon13549;
-
+/*
+ * @problem		숨바꼭질 3(13549) : https://www.acmicpc.net/problem/13549
+ * @author		pbg0205
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+class Main {
 	
 	static int n, k;
 	static int min;
