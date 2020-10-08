@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  * @Author      pbg0205
  * @Created by  09.19.20
  */
-public class Main_backTracking {
+class Main_backTracking {
 
     static int[] arr;
     static int N, S;
