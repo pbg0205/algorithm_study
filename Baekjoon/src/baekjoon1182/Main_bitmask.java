@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /*
- * @Problem     부분 수열의 합 : https://www.acmicpc.net/problem/1182
+ * @Problem     부분 수열의 합(1182) : https://www.acmicpc.net/problem/1182
  * @Author      pbgu0205
  * @Created by  09.19.20
  */
-public class Main_bitmask {
+class Main_bitmask {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
