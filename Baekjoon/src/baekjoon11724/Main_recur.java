@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class Main_recur {
+class Main_recur {
 	
 	static int[][] map;
 	static boolean[] visited;
