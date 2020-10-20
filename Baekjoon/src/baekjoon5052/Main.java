@@ -36,10 +36,10 @@ class Main {
     }
 
     private static boolean isConsistent(ArrayList<String> telephoneList) throws IOException {
-        return checkConsitency(telephoneList);
+        return checkConsistency(telephoneList);
     }
 
-    private static boolean checkConsitency(ArrayList<String> telephoneList) {
+    private static boolean checkConsistency(ArrayList<String> telephoneList) {
         int listSize = telephoneList.size();
         Collections.sort(telephoneList); //전화번호 길이 오름차순 정렬
 
