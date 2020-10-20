@@ -12,29 +12,26 @@ import java.util.*;
 class Main {
 
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    private static StringBuilder sb  = new StringBuilder();
+    private static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
         int testCase = Integer.parseInt(br.readLine());
 
-        checkResult(testCase);
+        while (testCase-- > 0) {
+            checkResult();
+        }
 
         printResult();
     }
 
-    private static void checkResult(int size) throws IOException {
-        int numberOfTelephone;
-        ArrayList<String> telephoneList;
+    private static void checkResult() throws IOException {
+        int numberOfTelephone = addIntByConsole();
+        ArrayList<String> telephoneList = addListByConsole(numberOfTelephone);
 
-        while(size-- > 0){
-            numberOfTelephone = addIntByConsole();
-            telephoneList = addListByConsole(numberOfTelephone);
-
-            if(isConsistent(telephoneList)){
-                sb.append("YES \n");
-            }else{
-                sb.append("NO \n");
-            }
+        if (isConsistent(telephoneList)) {
+            sb.append("YES \n");
+        } else {
+            sb.append("NO \n");
         }
     }
 
@@ -44,13 +41,13 @@ class Main {
 
     private static boolean checkConsitency(ArrayList<String> telephoneList) {
         int listSize = telephoneList.size();
-        Collections.sort(telephoneList);
+        Collections.sort(telephoneList); //전화번호 길이 오름차순 정렬
 
         for (int i = 0; i < listSize - 1; i++) {
             String nowNumber = telephoneList.get(i);
             String nextNumber = telephoneList.get(i + 1);
 
-            if(nextNumber.startsWith(nowNumber)){
+            if (nextNumber.startsWith(nowNumber)) {
                 return false;
             }
         }
@@ -58,7 +55,7 @@ class Main {
         return true;
     }
 
-    private static int addIntByConsole(int value) throws IOException{
+    private static int addIntByConsole() throws IOException {
         return Integer.parseInt(br.readLine());
     }
 
