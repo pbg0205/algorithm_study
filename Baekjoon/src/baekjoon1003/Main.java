@@ -1,17 +1,13 @@
-package dp;
+package baekjoon1003;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /*
  * @Problem     피보나치 함수(1003)
  * @Author      pbg0205
  * @Created by  09.07.20
- *
  */
-public class baekjoon1003 {
+class Main {
 
     static int[][] dp;
 
