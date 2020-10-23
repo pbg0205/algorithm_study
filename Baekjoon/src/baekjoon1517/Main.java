@@ -1,17 +1,15 @@
-package codeplus.middle1.divide_and_conquer_practice;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+package baekjoon1517;
 /*
- * 버블소트(1517)
- * - 머지소트(merge)소트로 접근하여 swap횟수를 출력한다.
- * 
+ * @problem		버블소트(1517)
+ * @url			https://www.acmicpc.net/problem/1517
+ * @author		pbg0205
  */
 
+import java.io.*;
+import java.util.*;
 
-public class bubbleSort {
+
+class Main {
 	static long swapCount = 0;
 	static long[] sorted;
 	
