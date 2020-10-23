@@ -1,15 +1,16 @@
-package beakjoon16437;
+package baekjoon16437;
 /*
  * @problem     양 구출 작전(16437)
  * @url         https://www.acmicpc.net/problem/16437
  * @author      pbg0205
  * @created by  10.22.20
- * */
+ * @explain     배열 인덱스를 이용한 후위 순회 방법
+ */
 
 import java.io.*;
 import java.util.*;
 
-class Main {
+class Main_array {
 
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer st;
@@ -60,5 +61,3 @@ class Main {
         }
     }
 }
-
-//TODO : class Tree를 통해 구현해보기
