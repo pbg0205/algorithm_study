@@ -1,4 +1,4 @@
-package beakjoon1259;
+package baekjoon1259;
 /*
  * @problem     팰린드롬수(1259)
  * @url         https://www.acmicpc.net/problem/1259
