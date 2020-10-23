@@ -1,4 +1,4 @@
-package codeplus.middle1.binarySearch;
+package baekjoon1654;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * @Time		{PM 09:57}
  * 
 */
-public class baekjoon1654 {
+class Main {
 	
 	static int[] LAN;
 	
