@@ -1,4 +1,4 @@
-package beakjoon4256;
+package baekjoon4256;
 /*
  * @problem     트리(4256) : https://www.acmicpc.net/problem/4256
  * @author      pbg0205
