@@ -1,12 +1,14 @@
-package codeplus.middle1.divide_and_conquer;
+package baekjoon11728;
+/*
+ * @problem		배열 합치기(11728)
+ * @url			https://www.acmicpc.net/problem/11728
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class sum_of_array {
+class Main {
 	
 	static StringTokenizer st;
 
