@@ -1,13 +1,14 @@
-package two_pointer;
+package baekjoon2470;
 
 import java.io.*;
 import java.util.*;
 /*
- * @problem     두 용액(2470) : https://www.acmicpc.net/problem/2470
+ * @problem     두 용액(2470)
+ * @url         https://www.acmicpc.net/problem/2470
  * @author      pbg0205
  * @created by  10.03.20
  */
-public class baekjoon2470 {
+class baekjoon2470 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
