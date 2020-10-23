@@ -1,11 +1,14 @@
-package codeplus.middle1.divide_and_conquer;
+package baekjoon10816;
+/*
+ * @problem		숫자카드2(10816)
+ * @url			https://www.acmicpc.net/problem/10816
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class numberCard2 {
+class Main {
 	
 	static StringTokenizer st;
 	
