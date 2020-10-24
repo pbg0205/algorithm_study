@@ -1,16 +1,14 @@
-package codeplus.middle2.stringAlgorithm1;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-
+package Baekjoon13505;
 /*
  * @Problem     두 수 OXR(13505)
  * @Author      pbg0205(참고)
  * @Created by  09.03.20
  */
-public class Baekjoon13505 {
+
+import java.io.*;
+import java.util.*;
+
+class Main {
     private static class Node {
         Node[] child;
 
