@@ -1,11 +1,14 @@
-package codeplus.middle1.divide_and_conquer_practice;
+package baekjoon1780;
+/*
+ * @problem		종이의 개수(1780)
+ * @url			https://www.acmicpc.net/problem/1780
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class numberOfPaper {
+class Main {
 
 	static StringTokenizer st;
 
