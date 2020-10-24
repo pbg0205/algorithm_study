@@ -1,13 +1,14 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon1931;
+/*
+ * @problem		회의실 배정(1931)
+ * @url			https://www.acmicpc.net/problem/1931
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class assigning_conference_room{
+class Main {
 	
 	static int[][] arr;
 	
