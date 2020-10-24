@@ -1,4 +1,4 @@
-package sorting;
+package baekjoon10825;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,12 +7,14 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 /*
  * @Problem     국영수(10825)
+ * @url         https://www.acmicpc.net/problem/10825
  * @Author      pbg0205
  * @Created by  09.02.20
  * @Explain
  *  - 객체에 Comparable의 method를 overriding하여 구현
  */
-public class baekjoon10825 {
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
