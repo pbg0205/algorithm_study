@@ -1,14 +1,14 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon1202;
+/*
+ * @problem		보석 도둑(1202)
+ * @url			https://www.acmicpc.net/problem/1202
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class jewelry_thief {
+class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
