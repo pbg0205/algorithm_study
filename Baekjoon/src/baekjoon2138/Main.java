@@ -1,10 +1,12 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon2138;
+/*
+ * @problem		전구와 스위치(2138)
+ * @url			https://www.acmicpc.net/problem/2138
+ * @author		pbg0205
+ */
+import java.io.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-public class bulb_and_switch {
+class Main {
 
 	static int size, count = 0;
 	static boolean[] origin, target, copy;
