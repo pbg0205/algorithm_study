@@ -1,4 +1,4 @@
-package dfs_bfs;
+package baekjoon1012;
 
 /*
  * @problem     유기농 배추(1012) : https://www.acmicpc.net/problem/1012
@@ -9,7 +9,7 @@ package dfs_bfs;
 import java.io.*;
 import java.util.*;
 
-public class baekjooon1012 {
+class Main {
 
     private static int[][] map;
     private static boolean[][] visited;
