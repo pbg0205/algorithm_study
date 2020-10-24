@@ -1,15 +1,16 @@
-package sorting;
+package baekjoon10989;
 
 import java.io.*;
 
 /*
  * @Problem     수 정렬하기3(10989)
+ * @url         https://www.acmicpc.net/problem/10989
  * @Author      pbg0205
  * @Created by  09.03.20
  * @Explain
  *  - 계수 정렬(counting Sort)로 구현
  */
-public class baekjoon10989 {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
