@@ -1,18 +1,16 @@
-package sorting;
+package baekjoon10814;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.PriorityQueue;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 /*
  * @Problem     나이순 정렬(10814)
+ * @url         https://www.acmicpc.net/problem/10814
  * @Author      pbg0205
  * @Created by  09.02.20
- *
  */
-public class baekjoon10814 {
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
