@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon7568;
 /*
  * @Problem     덩치(7568) : https://www.acmicpc.net/problem/7568
  * @Author      pbg0205
@@ -6,12 +6,10 @@ package bruteforce.baekjoon;
  *
  */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class baekjoon7568 {
+class Main {
     public static void main(String[] args) throws IOException {
         /* 1. 입력받기 위한 처리 */
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
