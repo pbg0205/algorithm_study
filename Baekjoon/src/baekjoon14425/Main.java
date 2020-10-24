@@ -1,13 +1,14 @@
-package codeplus.middle2.stringAlgorithm1;
-
-import java.io.*;
-import java.util.*;
+package baekjoon14425;
 /*
  * @Problem     문자열 집합(14425)
  * @Author      pbg0205
  * @Created by  09.02.20
  */
-public class baekjoon14425 {
+
+import java.io.*;
+import java.util.*;
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
