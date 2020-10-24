@@ -1,4 +1,4 @@
-package dfs_bfs;
+package baekjoon2583;
 /*
  * @problem     영역구하기(2583) : https://www.acmicpc.net/problem/2583
  * @author      pbg0205
@@ -8,7 +8,7 @@ package dfs_bfs;
 import java.io.*;
 import java.util.*;
 
-public class baekjoon2583 {
+class Main {
 
     private static int colSize;
     private static int rowSize;
