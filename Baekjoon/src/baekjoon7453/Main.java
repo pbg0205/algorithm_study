@@ -1,6 +1,7 @@
-package two_pointer;
+package baekjoon7453;
 /*
- * @problem     합이 0인  네 정수(7453) : https://www.acmicpc.net/problem/7453
+ * @problem     합이 0인  네 정수(7453)
+ * @url         https://www.acmicpc.net/problem/7453
  * @author      pbg0205
  * @created by  10.02.20
  */
@@ -9,7 +10,7 @@ package two_pointer;
 import java.io.*;
 import java.util.*;
 
-public class baekjoon7453 {
+class Main {
     static int arr[][];
 
     static long AB[], CD[];
