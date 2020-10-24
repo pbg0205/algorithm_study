@@ -1,11 +1,14 @@
-package codeplus.middle1.divide_and_conquer_practice;
+package baekjoon2263;
+/*
+ * @problem		트리의 순회(2263)
+ * @url			https://www.acmicpc.net/problem/2263
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class TreeTranversal {
+class Main {
 	
 	static StringTokenizer st;
 	static StringBuilder sb;
