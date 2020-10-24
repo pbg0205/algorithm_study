@@ -1,9 +1,7 @@
-package queue;
+package baekjoon17952;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Stack;
+import java.io.*;
+import java.util.*;
 
 /*
  * @Problem      과제는 끝나지 않아!(17592)
@@ -11,7 +9,8 @@ import java.util.Stack;
  * @Created by   08.28.20
  *
  */
-public class baekjoon17952 {
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
