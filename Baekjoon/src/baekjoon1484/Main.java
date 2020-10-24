@@ -1,4 +1,4 @@
-package two_pointer;
+package baekjoon1484;
 /*
  * @problem     다이어트(1484) : https://www.acmicpc.net/problem/1484
  * @author      pbg0205
@@ -7,14 +7,14 @@ package two_pointer;
 
 import java.io.*;
 
-public class baekjoon1484 {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
 
         int G = Integer.parseInt(br.readLine());
-        int leftIndex = 1;
-        int rightIndex = 2;
+        int leftIndex = 1;//기억하고 있던 몸무게
+        int rightIndex = 2;//현재 몸무게
         boolean hasWeight = false;
 
         //G = 현재 몸무게^2 - 기억하고 있던 몸무게^2
