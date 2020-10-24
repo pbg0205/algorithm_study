@@ -1,13 +1,16 @@
-package queue;
+package baekjoon18258;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.LinkedList;
+import java.io.*;
+import java.util.*;
 
-public class queue2 {
+/*
+ * @Problem		큐2(18258)
+ * @url			https://www.acmicpc.net/problem/18258
+ * @Author		pbg0205
+ */
+
+
+class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
