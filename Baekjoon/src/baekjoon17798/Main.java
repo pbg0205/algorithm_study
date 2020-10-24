@@ -1,14 +1,16 @@
-package stack;
+package baekjoon17798;
 
 import java.io.*;
-import java.util.Stack;
-import java.util.StringTokenizer;
+import java.util.*;
+
 /*
  * @Problem		{오큰수 (17798)}
+ * @url			https://www.acmicpc.net/problem/17798
  * @author		{pbg0205}
  * @Create by	{08.30.20}
  */
-public class baekjoon17798 {
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         long startTime = System.currentTimeMillis();
