@@ -1,4 +1,4 @@
-package dfs_bfs;
+package baekjoon10971;
 
 import java.io.*;
 import java.util.*;
@@ -8,7 +8,7 @@ import java.util.*;
  * @author       pbg0205
  * @created by   09.24.20
  */
-public class baekjoon10971 {
+class Main_bitmask {
 
     static int min = Integer.MAX_VALUE;
     static int n;
