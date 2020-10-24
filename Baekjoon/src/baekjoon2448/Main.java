@@ -1,17 +1,13 @@
-package codeplus.middle1.divide_and_conquer_practice;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+package baekjoon2448;
 /*
- * 별찍기11(1074)
- * - 분할정복을 이용해서 별찍기
- * - sysout으로 별찍을 시, 시간초과 주의
- * 
+ * @problem		별찍기11(2448)
+ * @url			https://www.acmicpc.net/problem/2448
+ * @author		pbg0205
  */
-public class star11 {
+
+import java.io.*;
+
+class Main {
 	   private static char[][] map;
 	   
 	    public static void main(String[] args) throws IOException{
