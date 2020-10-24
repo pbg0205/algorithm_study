@@ -1,7 +1,8 @@
-package bruteforce.baekjoon;
+package baekjoon14889;
 
 import java.io.*;
 import java.util.*;
+
 /*
  * @Problem    스타트와 링크(14889)       https://www.acmicpc.net/problem/14889
  * @Author      pbg0205
@@ -9,7 +10,7 @@ import java.util.*;
  *
  */
 
-public class baekjoon14889_backtracking {
+class Main_backtracking {
 
     static int N;
     static int min = Integer.MAX_VALUE;
