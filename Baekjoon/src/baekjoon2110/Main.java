@@ -1,4 +1,4 @@
-package codeplus.middle1.binarySearch;
+package baekjoon2110;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import java.util.StringTokenizer;
  *    if(거리가 짧다) -> 긴 거리 범위로  좁힌다.(pl = pc + 1);
  */
 
-public class baekjoon2110 {
+class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
