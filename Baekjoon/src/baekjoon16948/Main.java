@@ -1,4 +1,4 @@
-package dfs_bfs;
+package baekjoon16948;
 /*
  * @Problem     데스 나이트(16948) : https://www.acmicpc.net/problem/16948
  * @Author      pbg0205
@@ -8,7 +8,7 @@ package dfs_bfs;
 import java.io.*;
 import java.util.*;
 
-public class baekjoon16948 {
+class Main {
 
     static int r1, c1;
     static int r2, c2;
