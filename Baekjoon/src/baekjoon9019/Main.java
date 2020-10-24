@@ -1,4 +1,4 @@
-package dfs_bfs;
+package baekjoon9019;
 /*
  * @Problem     DSLR(9019) : https://www.acmicpc.net/problem/9019
  * @Author      pbg0205
@@ -8,7 +8,7 @@ package dfs_bfs;
 import java.io.*;
 import java.util.*;
 
-public class baekjoon9019 {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
