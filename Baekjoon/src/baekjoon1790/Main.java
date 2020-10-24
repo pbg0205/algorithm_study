@@ -1,4 +1,4 @@
-package codeplus.middle1.binarySearch;
+package baekjoon1790;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * @Time		{PM 06:51}
  * 
 */
-public class baekjoon1790 {
+class Main {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
