@@ -1,14 +1,15 @@
-package queue;
+package baekjoon12789;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
-public class dokydoky {
+/*
+ * @Problem		도키도키 간식드리미(12789)
+ * @url			https://www.acmicpc.net/problem/12789
+ * @Author		pbg0205
+ */
+
+class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
