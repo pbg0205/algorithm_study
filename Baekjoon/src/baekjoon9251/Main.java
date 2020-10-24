@@ -1,9 +1,4 @@
-package codeplus.middle2.stringAlgorithm1;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+package baekjoon9251;
 /*
  * @Problem     LCS(9251)
  * @Author      pbg0205
@@ -11,7 +6,10 @@ import java.io.InputStreamReader;
  *
  */
 
-public class baekjoon9251 {
+import java.io.*;
+
+
+class Main {
         static int[][] dp = new int[1001][1001];
 
         public static void main(String[] args) throws IOException {
