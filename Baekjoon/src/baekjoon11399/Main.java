@@ -1,12 +1,13 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon11399;
+/*
+ * @problem		ATM(11399)
+ * @url			https://www.acmicpc.net/problem/11399
+ * @author		pbg0205
+ */
+import java.io.*;
+import java.util.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
-public class ATM {
+class Main {
 	
 	static int[] time;
 	
