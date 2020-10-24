@@ -1,13 +1,15 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon12015;
+/*
+ * @problem		가장 긴 증가하는 부분 수열 2(12015)
+ * @url			https://www.acmicpc.net/problem/12015
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
 
-public class longest_increasing_subsequence2 {
+import java.io.*;
+import java.util.*;
+
+class Main {
 
     public static void main(String[] args) throws IOException {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
