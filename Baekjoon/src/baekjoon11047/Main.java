@@ -1,11 +1,15 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon11047;
+/*
+ * @problem		동전 0(11047)
+ * @url			https://www.acmicpc.net/problem/11047
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
-public class coin_0 {
+import java.io.*;
+import java.util.*;
+
+class Main {
 	
 	static int n, k;
 	static int[] coin;
