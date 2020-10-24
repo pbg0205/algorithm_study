@@ -1,9 +1,4 @@
-package codeplus.middle2.stringAlgorithm1;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+package baekjoon1786;
 /*
  * @Problem         찾기(1786)
  * @Author          pbg0205
@@ -11,7 +6,10 @@ import java.io.InputStreamReader;
  * @Explain
  *  - KMP알고리즘을 이용한 탐색 문제.
  */
-public class beakjoon1786 {
+
+import java.io.*;
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
