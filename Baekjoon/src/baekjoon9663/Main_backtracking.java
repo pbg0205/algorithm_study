@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon9663;
 
 import java.io.*;
 /*
@@ -9,7 +9,7 @@ import java.io.*;
  */
 
 
-public class baekjoon9663_backtracking {
+class Main_backtracking {
 
     static int answer = 0;
     static int N;
