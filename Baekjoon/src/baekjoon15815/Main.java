@@ -1,17 +1,16 @@
-package stack;
+package baekjoon15815;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Stack;
+import java.io.*;
+import java.util.*;
 
 /*
  * @Problem		천재 수학자 성필(15815)
+ * @url         https://www.acmicpc.net/problem/15815
  * @Author		pbg0205
  * @Created by	08.26.20
  * 
  */
-public class baekjoon15815 {
+class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String input = br.readLine();
