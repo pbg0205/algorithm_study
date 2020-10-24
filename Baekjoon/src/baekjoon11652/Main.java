@@ -1,15 +1,16 @@
-package sorting;
+package baekjoon11652;
 
 import java.io.*;
 import java.util.*;
 /*
  * @Problem     카드(11652)
+ * @url         https://www.acmicpc.net/problem/11652
  * @Author      pbg0205
  * @Created by  09.04.20
  *
  */
 
-public class baekjoon11652 {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
