@@ -1,10 +1,4 @@
-package codeplus.middle2.stringAlgorithm1;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-
+package baekjoon14426;
 /*
  * @Problem     접두사 찾기(14426)
  * @Author      pbg0205
@@ -12,7 +6,11 @@ import java.util.StringTokenizer;
  *
  */
 
-public class beakjoon14426 {
+import java.io.*;
+import java.util.*;
+
+
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
