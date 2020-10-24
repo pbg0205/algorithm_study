@@ -1,10 +1,13 @@
-package codeplus.middle1.divide_and_conquer_practice;
+package baekjoon11729;
+/*
+ * @problem		하노이 탑 이동 순서(11729)
+ * @url			https://www.acmicpc.net/problem/11729
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
-public class TowerOfHanoi {
+class Main {
 	
 	static int count = 1;
 	static StringBuilder sb = new StringBuilder();
