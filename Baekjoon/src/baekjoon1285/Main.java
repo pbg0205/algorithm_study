@@ -1,10 +1,14 @@
-package codeplus.middle1.greedy_algo;
+package baekjoon1285;
+/*
+ * @problem		동전 뒤집기(1285)
+ * @url			https://www.acmicpc.net/problem/1285
+ * @author		pbg0205
+ */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
-public class reversing_coin {
+import java.io.*;
+
+class Main  {
 	
 	static boolean [][] coin;
 	static int T_count = 0;
