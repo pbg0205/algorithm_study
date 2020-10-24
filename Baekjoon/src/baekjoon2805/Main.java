@@ -1,4 +1,4 @@
-package codeplus.middle1.binarySearch;
+package baekjoon2805;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * @starTime	{PM 10:00}
  * @endTime		{PM 10:31}
 */
-public class baekjoon2805 {
+class Main {
 	
 	static long[] trees_height;
 	
