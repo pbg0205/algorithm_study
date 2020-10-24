@@ -1,4 +1,4 @@
-package bruteforce.baekjoon;
+package baekjoon9663;
 
 import java.io.*;
 
@@ -8,7 +8,7 @@ import java.io.*;
  * @Created by   09.18.20
  *
  */
-public class baekjoon9663_bitmask {
+class Main_bitmask {
 
     static int N, line, res;
 
