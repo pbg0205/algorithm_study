@@ -1,12 +1,15 @@
-package queue;
+package baekjoon15828;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.io.*;
+import java.util.*;
 
-public class router {
+/*
+ * @Problem		Router(15828)
+ * @url			https://www.acmicpc.net/problem/15828
+ * @Author		pbg0205
+ */
+
+class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int bufferSize = Integer.parseInt(br.readLine());
