@@ -1,17 +1,16 @@
-package codeplus.middle1.divide_and_conquer_practice;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-
+package baekjoon1074;
 /*
- * 문제명 : Z(1074)
- * 규칙성을 통한 분할 정복 방식
- *
+ * @problem		Z(1074)
+ * @url			https://www.acmicpc.net/problem/1074
+ * @author		pbg0205
  */
 
-public class Z {
+
+import java.io.*;
+import java.util.*;
+
+
+class Main {
 	
 	static int[][] map;
 	static int r, c;
