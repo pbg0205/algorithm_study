@@ -1,16 +1,14 @@
-package dfs_bfs;
+package baekjoon16928;
 /*
  * @Problem     뱀과 사다리 게임(16928) : https://www.acmicpc.net/problem/16928
  * @Author      pbg0205
  * @Created by  09.22.20
  */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
-public class backjoon16928 {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
