@@ -1,14 +1,15 @@
-package two_pointer;
+package baekjoon2003;
 
 import java.io.*;
 import java.util.*;
 
 /*
  * @problem    수들의 함2(2003)
+ * @url			https://www.acmicpc.net/problem/2003
  * @author      pbg0205
  * @created by  09.28.20
  */
-public class baekjoon2003 {
+class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
