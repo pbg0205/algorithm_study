@@ -6,10 +6,14 @@ package baekjoon1753;
  * @created by  10.27.20
  */
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
 
-//TODO : int[][] map을 이용한 문제 풀이 -> 메모리 초과
 class Main {
 
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,98 +23,118 @@ class Main {
         st = new StringTokenizer(br.readLine());
 
         int nodeSize = Integer.parseInt(st.nextToken());
-        int edge = Integer.parseInt(st.nextToken());
+        int edgeSize = Integer.parseInt(st.nextToken());
         int start = Integer.parseInt(br.readLine());
 
-        Graph graph = new Graph(nodeSize);
-
-        while(nodeSize-- > 0){
-            st = new StringTokenizer(br.readLine());
-
-            int from = Integer.parseInt(st.nextToken());
-            int to = Integer.parseInt(st.nextToken());
-            int weight = Integer.parseInt(st.nextToken());
-
-            graph.input(from, to, weight);
-        }
+        Graph graph = makeGraph(nodeSize, edgeSize);
 
         graph.dijkstra(start);
     }
-}
 
-class Graph{
-    private int size;
-    private int[][] map;
+    private static Graph makeGraph(int nodeSize, int edgeSize) throws IOException {
+        Graph graph = new Graph(nodeSize);
 
-    public Graph(int size){
-        this.size = size;
-        map = new int[size + 1][size + 1];
+        while (edgeSize-- > 0) {
+            st = new StringTokenizer(br.readLine());
+
+            int start = Integer.parseInt(st.nextToken());
+            int end = Integer.parseInt(st.nextToken());
+            int weight = Integer.parseInt(st.nextToken());
+
+            graph.insertNode(start, end, weight);
+        }
+
+        return graph;
     }
 
-    public void input(int from, int to, int weight){
-        map[from][to] = weight;
+}
+
+class Graph {
+    class Node implements Comparable<Node> {
+        int end;
+        int weight;
+
+        public Node(int end, int weight) {
+            this.end = end;
+            this.weight = weight;
+        }
+
+        @Override
+        public int compareTo(Node other) {
+            return this.weight - other.weight;
+        }
+    }
+
+    private ArrayList<Node>[] edgeList;
+
+    public Graph(int size) {
+        this.edgeList = new ArrayList[size + 1];
+        for (int index = 0; index <= size; index++) {
+            edgeList[index] = new ArrayList<>();
+        }
+    }
+
+    public int size(){
+        return this.edgeList.length - 1;
+    }
+
+    public void insertNode(int start, int end, int weight){
+        this.edgeList[start].add(new Node(end, weight));
     }
 
     public void dijkstra(int start){
-        final int INF = Integer.MAX_VALUE;
-        int[] distance = initDistance(size);
-        boolean[] visited = new boolean[size + 1];
+        boolean[] visited = new boolean[size() + 1];
+        int[] distance = initDistance(size() + 1, start);
 
-        distance[start] = 0;
-        visited[start] = true;
-
-        for (int adjacent = 1; adjacent < size + 1; adjacent++) {
-            if(!visited[adjacent] && map[start][adjacent] != 0){
-                distance[adjacent] = map[start][adjacent];
-            }
-        }
-
-        for (int trial = 1; trial < size - 1; trial++) {
-            int minValue = INF;
-            int minIndex = -1;
-
-            for (int node = 1; node < size + 1; node++) {
-                if(!visited[node] && distance[node] != INF){
-                    if(distance[node] < minValue){
-                        minValue = distance[node];
-                        minIndex = node;
-                    }
-                }
-            }
-
-            visited[minIndex] = true;
-
-            for (int node = 1; node < size + 1; node++) {
-                if(!visited[node] && map[minIndex][node] != 0){
-                    if(distance[node] > distance[minIndex] + map[minIndex][node]){
-                        distance[node] = distance[minIndex] + map[minIndex][node];
-                    }
-                }
-            }
-        }
+        distance = minDistance(distance, visited, start);
 
         print(distance);
+    }
+
+    private int[] minDistance(int[] distance,
+                              boolean[] visited,
+                              int start) {
+
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+        pq.offer(new Node(start, 0));
+
+        while(!pq.isEmpty()){
+            Node currentNode = pq.poll();
+            int adjacent =  currentNode.end;
+
+            if(!visited[adjacent]){
+                visited[adjacent] = true;
+            }else{
+                continue;
+            }
+
+            for (Node node : edgeList[adjacent]){
+                if(distance[node.end] > distance[adjacent] + node.weight){
+                    distance[node.end] = distance[adjacent] + node.weight;
+                    pq.offer(new Node(node.end, distance[node.end]));
+                }
+            }
+        }
+
+        return distance;
     }
 
     private void print(int[] distance) {
         final int INF = Integer.MAX_VALUE;
 
-        for (int node = 1; node < size + 1; node++) {
-            if (distance[node] == INF){
+        for (int index = 1; index <= size(); index++){
+            if(distance[index] == INF){
                 System.out.println("INF");
             }else{
-                System.out.println(distance[node]);
+                System.out.println(distance[index]);
             }
         }
     }
 
-    private int[] initDistance(int size) {
-        final int INF = Integer.MAX_VALUE;
-        int distance[] = new int[size + 1];
-
-        for (int node = 1; node < size + 1; node++) {
-            distance[node] = INF;
-        }
+    private int[] initDistance(int size, int start) {
+        int[] distance = new int[size + 1];
+        Arrays.fill(distance, Integer.MAX_VALUE);
+        distance[start] = 0;
 
         return distance;
     }
