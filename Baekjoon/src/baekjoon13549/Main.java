@@ -3,72 +3,100 @@ package baekjoon13549;
  * @problem		숨바꼭질 3(13549) : https://www.acmicpc.net/problem/13549
  * @author		pbg0205
  */
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+
+import java.io.*;
+import java.util.*;
 
 class Main {
-	
-	static int n, k;
-	static int min;
-	
-	static boolean[] visited;
-	
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		n = Integer.parseInt(st.nextToken());
-		k = Integer.parseInt(st.nextToken());
+    private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static StringTokenizer st;
 
-		visited = new boolean[100002];
-		min = Integer.MAX_VALUE;
-		
-		bfs();
-		
-		System.out.println(min);
-		
-		br.close();
-	}
+    static int n, k;
 
-	private static void bfs() {
-		Queue<location_info> queue = new LinkedList<>();
-		queue.add(new location_info(n, 0));
-		
-		while(!queue.isEmpty()) {
-			location_info li = queue.poll();
+    public static void main(String[] args) throws IOException {
+    	st = new StringTokenizer(br.readLine());
+        n = Integer.parseInt(st.nextToken());
+        k = Integer.parseInt(st.nextToken());
 
-			if(li.location == k) {
-				min = Math.min(min,  li.time);
-				return ;
-			}
-			
-			if(visited[li.location])	continue;
-			visited[li.location] = true;
-			
-			//x - 1
-			if(li.location - 1 >= 0)
-				if(!visited[li.location - 1])	queue.add(new location_info(li.location - 1, li.time + 1));
-			//x * 2
-			if(li.location * 2 <= 100000)
-				if(!visited[li.location * 2])	queue.add(new location_info(li.location * 2, li.time));
-			//x + 1
-			if(li.location + 1 <= 100000)
-				if(!visited[li.location + 1])	queue.add(new location_info(li.location + 1, li.time + 1));
-			
-		}
-	}
+        int minvalue = solve();
+        System.out.println(minvalue);
+
+        br.close();
+    }
+
+    private static int solve() {
+        return iterateByQueue();
+    }
+
+    private static int iterateByQueue() {
+        Queue<location_info> queue = initQueue();
+        boolean[] visited = new boolean[100002];
+
+        return bfsByQueue(queue, visited);
+    }
+
+    private static Queue<location_info> initQueue() {
+        Queue<location_info> queue = new LinkedList<>();
+        queue.add(new location_info(n, 0));
+
+        return queue;
+    }
+
+    private static int bfsByQueue(Queue<location_info> queue, boolean[] visited) {
+        int minValue = Integer.MAX_VALUE;
+
+        while (!queue.isEmpty()) {
+            location_info li = queue.poll();
+
+            if (li.location == k) {
+                return  Math.min(minValue, li.time);
+            }
+
+            if (visited[li.location]) continue;
+            visited[li.location] = true;
+
+            //x - 1
+            queue = check(queue, visited, li);
+        }
+
+        return -1;
+    }
+
+    private static Queue<location_info> check(Queue<location_info> queue,
+                                              boolean[] visited,
+                                              location_info li) {
+        int forWard = li.location - 1;
+        int mutiply = li.location * 2;
+        int backward = li.location + 1;
+
+        if (isBoundary(forWard) && !visited[forWard]){
+            queue.add(new location_info(forWard, li.time + 1));
+        }
+        //x * 2
+        if (isBoundary(mutiply) && !visited[mutiply]){
+            queue.add(new location_info(mutiply, li.time));
+        }
+        //x + 1
+        if (isBoundary(backward) && !visited[backward]){
+            queue.add(new location_info(backward, li.time + 1));
+        }
+
+        return queue;
+    }
+
+    private static boolean isBoundary(int location) {
+        return (0 <= location && location <= 100000);
+    }
+
 }
 
-class location_info{
-	int location;
-	int time;
-	
-	public location_info(int location, int time) {
-		this.location = location;
-		this.time = time;
-	}
+class location_info {
+    int location;
+    int time;
+
+    public location_info(int location, int time) {
+        this.location = location;
+        this.time = time;
+    }
 }
