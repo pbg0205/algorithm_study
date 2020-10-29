@@ -27,29 +27,54 @@ class Main {
     }
 
     private static int minValueOfBrokenWall(Point point) throws IOException {
-        int[][] map = makeMap(point);
-        int minValue = bfs(map);
+        int[][] map = makeMazeMap(point);
+        int[][] brokenCount = makeBrokenCountMap(point);
 
-        return minValue;
+        return bfs(map, brokenCount);
+    }
+
+    private static int[][] makeBrokenCountMap(Point point) {
+        int row = point.x;
+        int col = point.y;
+
+        int[][] minMap = new int[row][col];
+
+        minMap = fillINF(minMap);
+
+        return minMap;
+    }
+
+    private static int[][] fillINF(int[][] minMap) {
+        final int INF = 100_000_000;
+
+        for (int row = 0; row < minMap.length; row++) {
+            for (int col = 0; col < minMap[row].length; col++) {
+                minMap[row][col] = INF;
+            }
+        }
+
+        return minMap;
     }
 
     //TODO : 기능별 리팩토링
-    private static int bfs(int[][] map) {
+    private static int bfs(int[][] map, int[][] brokenCount) {
         int minValue = Integer.MAX_VALUE;
 
-        final int MAX_DIRECTION_VALUE = 2;
-        int[] dx = {1, 0};
-        int[] dy = {0, 1};
+        final int MAX_DIRECTION_VALUE = 4;
+        int[] dx = {1, 0,-1, 0};
+        int[] dy = {0, 1, 0,-1};
 
-        Queue<Point> queue = new LinkedList<>();
-        queue.offer(new Point(0, 0, 0));
+        PriorityQueue<Point> pq = new PriorityQueue<>();
+        pq.offer(new Point(0, 0, 0));
 
-        while (!queue.isEmpty()) {
-            Point now = queue.poll();
+        brokenCount[0][0] = 0;
+
+        while (!pq.isEmpty()) {
+            Point now = pq.poll();
 
             //TOOD : 위치에 대한 기저조건 찾기
             if (now.x == row - 1 && now.y == col - 1) {
-                minValue = now.numberOfBrokenWall < minValue ? now.numberOfBrokenWall : minValue;
+                minValue = now.cost;
             }
 
             for (int index = 0; index < MAX_DIRECTION_VALUE; index++) {
@@ -57,10 +82,9 @@ class Main {
                 int ny = now.y + dy[index];
 
                 if (isBoundary(nx, ny)) {
-                    if (map[nx][ny] == 1) {
-                        queue.offer(new Point(nx, ny, now.numberOfBrokenWall + 1));
-                    } else {
-                        queue.offer(new Point(nx, ny, now.numberOfBrokenWall));
+                    if(brokenCount[nx][ny] > brokenCount[now.x][now.y] + map[nx][ny]){
+                        brokenCount[nx][ny] = brokenCount[now.x][now.y] + map[nx][ny];
+                        pq.offer(new Point(nx, ny, brokenCount[nx][ny]));
                     }
                 }
             }
@@ -73,7 +97,7 @@ class Main {
         return ((0 <= x && x < row) && (0 <= y && y < col));
     }
 
-    private static int[][] makeMap(Point point) throws IOException {
+    private static int[][] makeMazeMap(Point point) throws IOException {
         int row = point.x;
         int col = point.y;
 
@@ -93,7 +117,7 @@ class Main {
     }
 
     private static int[] inputColumn(String rowStatus, int col) {
-        int[] arr_tmp = new int[col];
+        int[] arr_tmp = new int[col] ;
         char colStatus;
 
         for (int index = 0; index < col; index++) {
@@ -105,14 +129,19 @@ class Main {
     }
 }
 
-class Point {
+class Point implements Comparable<Point>{
     int x; //row
     int y; //col
-    int numberOfBrokenWall;//TODO : 변수 capsulation에 대해서 한번 고민해보기
+    int cost;
 
-    public Point(int x, int y, int numberOfBrokenWall) {
+    public Point(int x, int y, int cost) {
         this.x = x;
         this.y = y;
-        this.numberOfBrokenWall = numberOfBrokenWall;
+        this.cost = cost;
+    }
+
+    @Override
+    public int compareTo(Point other) {
+        return this.cost - other.cost;
     }
 }
