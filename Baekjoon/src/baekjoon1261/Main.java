@@ -10,7 +10,6 @@ import java.util.*;
  * @created by  10.29.20
  */
 
-//TODO  메모리 초과 : bfs -> 다른 접근법 생각해보기
 class Main {
 
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -71,8 +70,7 @@ class Main {
 
         while (!pq.isEmpty()) {
             Point now = pq.poll();
-
-            //TOOD : 위치에 대한 기저조건 찾기
+            
             if (now.x == row - 1 && now.y == col - 1) {
                 minValue = now.cost;
             }
