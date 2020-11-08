@@ -160,7 +160,7 @@
     - 사탕 게임(3085) : ([문제](https://www.acmicpc.net/problem/3085) / [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon3085/Main.java))
     - 덩치(7588) : ([문제](https://www.acmicpc.net/problem/7568) / [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon7568/Main.java))
     - 토마토(7576) : ([문제](https://www.acmicpc.net/problem/7576) / [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon7576/Main.java))
-
+    - 체스판 다시 칠하기(1018) : ([문제](https://www.acmicpc.net/problem/1018) / [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1018/Main.java))
 - Divide and conquer(분할 정복)
     - Z(1074) : ([문제](https://www.acmicpc.net/problem/1074) / [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1074/Main.java))
     - 종이의 개수(1780) : ([문제](https://www.acmicpc.net/problem/1780) / [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1780/Main.java))
