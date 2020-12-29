@@ -134,7 +134,7 @@
     |문제 번호|문제 명|링크|답안|
     | ---- | ---- | ---- | ---- |
     | 1003 |피보나치 함수 | [문제](https://www.acmicpc.net/problem/1003) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1003/Main.java)|
-    | 10844 | 쉬운 계단 수 | [문제](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon10844/Main.java) / [답안](https://www.acmicpc.net/problem/10844)|
+    | 10844 | 쉬운 계단 수 | [문제](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon10844/Main.java) | [답안](https://www.acmicpc.net/problem/10844)|
     | 11052 | 카드 구매하기 | [문제](https://www.acmicpc.net/problem/11052) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon11052/Main.java)|
     | 11053 | 가장 긴 증가하는 부분 수열 | [문제](https://www.acmicpc.net/problem/11053) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon11053/Main.java)|
     | 11055 |가장 큰 증가 부분 수열 | [문제](https://www.acmicpc.net/problem/11055) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon11055/Main.java)|
