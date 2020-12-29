@@ -10,56 +10,71 @@ import java.util.*;
 
 
 class Main {
-	static long swapCount = 0;
-	static long[] sorted;
-	
-	public static void main(String[] args) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
-		
-		int n = Integer.parseInt(br.readLine());
-		sorted = new long[n];
-		long[] arr = new long[n];
-		
-		st = new StringTokenizer(br.readLine());
-		for (int i = 0; i < n; i++)
-			arr[i] = Integer.parseInt(st.nextToken());
-		
-		mergetSort(arr, 0, n-1);
-		
-		System.out.println(swapCount);
-	}
+    private static int n;
+    private static long swapCount = 0;
 
-	private static void mergetSort(long[] arr, int low, int high) {
-		if(low < high) {
-			int mid = (low  + high) / 2;
-			mergetSort(arr, low, mid);
-			mergetSort(arr, mid + 1, high);
-			merge(arr, low, mid, high);
-		}
-	}
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st;
 
-	private static void merge(long[] arr, int low, int mid, int high) {
-		int i = low;
-		int j = mid + 1;
-		int index = low;
-		
-		while(i <= mid && j <= high) {
-			if(arr[i] <= arr[j])
-				sorted[index++] = arr[i++];
-			else {
-				sorted[index++] = arr[j++];
-				swapCount += (mid + 1 - i);
-			}
-		}
-		
-		while(i <= mid)
-			sorted[index++] = arr[i++];
-		
-		while(j <= high)
-			sorted[index++] = arr[j++];
-		
-		for(int k = low; k <= high; k++)
-			arr[k] = sorted[k];
-	}
+        n = Integer.parseInt(br.readLine());
+        long[] temp = new long[n];
+        long[] sorted = new long[n];
+
+        st = new StringTokenizer(br.readLine());
+
+        int index = 0;
+        while (st.hasMoreTokens()) {
+            temp[index++] = Integer.parseInt(st.nextToken());
+        }
+
+        mergetSort(sorted, temp, 0, n - 1);
+
+        System.out.println(swapCount);
+    }
+
+    private static void mergetSort(long[] sorted, long[] temp, int low, int high) {
+        if (low < high) {
+            int mid = (low + high) / 2;
+            mergetSort(sorted, temp, low, mid);
+            mergetSort(sorted, temp, mid + 1, high);
+            merge(sorted, temp, low, mid, high);
+            printArr(temp);
+        }
+    }
+
+    private static void printArr(long[] temp) {
+        for (long l : temp) {
+            System.out.print(l + " ");
+        }
+        System.out.println();
+    }
+
+    private static void merge(long[] sorted, long[] temp, int low, int mid, int high) {
+        int left = low;
+        int right = mid + 1;
+        int index = low;
+
+        while (left <= mid && right <= high) {
+            if (temp[left] <= temp[right]) {
+                sorted[index] = temp[left++];
+            } else {
+                sorted[index] = temp[right++];
+                swapCount += (mid + 1 - left);
+            }
+            index++;
+        }
+
+        while (left <= mid) {
+            sorted[index++] = temp[left++];
+        }
+
+        while (right <= high) {
+            sorted[index++] = temp[right++];
+        }
+
+        for (int i = low; i <= high; i++) {
+            temp[i] = sorted[i];
+        }
+    }
 }
