@@ -23,22 +23,18 @@ class Main {
         }
 
         Arrays.sort(serialNumbers, (o1, o2) -> {
-            if(o1.length() != o2.length()) {
+            if (o1.length() != o2.length()) {
                 return Integer.compare(o1.length(), o2.length());
             }
 
-            if(o1.length() == o2.length()) {
-                int sumOfPrev = getSum(o1);
-                int sumOfAfter = getSum(o2);
+            int sumOfPrev = getSum(o1);
+            int sumOfAfter = getSum(o2);
 
-                if(sumOfPrev == sumOfAfter) {
-                    return o1.compareTo(o2);
-                }
-
-                return Integer.compare(sumOfPrev, sumOfAfter);
+            if (sumOfPrev == sumOfAfter) {
+                return o1.compareTo(o2);
             }
 
-            return 0;
+            return Integer.compare(sumOfPrev, sumOfAfter);
         });
 
         for (String serialNumber : serialNumbers) {
@@ -51,7 +47,7 @@ class Main {
         char[] serialChar = serial.toCharArray();
 
         for (Character character : serialChar) {
-            if(character >= '0' && character <= '9') {
+            if (character >= '0' && character <= '9') {
                 sum += character - '0';
             }
         }
