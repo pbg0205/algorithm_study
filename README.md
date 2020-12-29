@@ -44,7 +44,7 @@
     | 11656| 접미사 배열 | [문제](https://www.acmicpc.net/problem/11656) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon11656/Main.java)|
     | 11728| 배열 합치기 | [문제](https://www.acmicpc.net/problem/11728) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon11728/Main.java)|
     | 1517| 버블소트 | [문제](https://www.acmicpc.net/problem/1517) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1517/Main.java)|
-
+    | 1430| 시리얼번호 | [문제](https://www.acmicpc.net/problem/1431) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/Baekjoon1431/Main.java)
 - Queue(큐)   
 
     |문제 번호|문제 명|링크|답안|
