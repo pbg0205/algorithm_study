@@ -12,7 +12,7 @@
 * [SW Expert Academy](https://swexpertacademy.com/main/main.do)
 
 ## 알고리즘 기록
-- [알고리즘 챌린지]()
+- [알고리즘 챌린지](https://github.com/pbg0205/algorithm_study/blob/master/algorithm_challenge.md)
 
 ## 분류
 - String(문자열)   
