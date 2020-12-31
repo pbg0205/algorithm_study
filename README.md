@@ -268,4 +268,5 @@
     |문제 번호|문제 명|링크|답안|
     | ---- | ---- | ---- | ---- |
     | 11729 |  하노이 탑 이동 순서 | [문제](https://www.acmicpc.net/problem/11729) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon11729/Main.java)|
+    | 2447 |  별 찍기 - 10 | [문제](https://www.acmicpc.net/problem/2447) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon2447/Main.java)|
     
