@@ -20,7 +20,7 @@
 ## 주차별 알고리즘(풀이)
 |      일지      |  주차  |                        문제1                        |                        문제2                        |                        문제3                        |
 |:--------------:|:------:|:---------------------------------------------------|:----------------------------------------------------|:----------------------------------------------------|
-| 12/30 ~ 01/03  |   1    |[시리얼번호](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/Baekjoon1431/Main.java)   |[하노이의 탑]()   |[별 찍기 - 10](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon2447/Main.java) |
+| 12/30 ~ 01/03  |   1    |[시리얼번호](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/Baekjoon1431/Main.java)   |[하노이의 탑](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1914/Main.java)   |[별 찍기 - 10](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon2447/Main.java) |
 
 
 <br><br><br><br><br><br><br>
