@@ -8,7 +8,7 @@ class FailRatio {
         int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
 
         int n2 = 4;
-        int[] stages2 = {4,1,2,3};
+        int[] stages2 = {4, 1, 2, 3};
 
         FailRatio failRatio = new FailRatio();
         int[] answer = failRatio.solution(n, stages);
@@ -19,74 +19,53 @@ class FailRatio {
     }
 
     public int[] solution(int N, int[] stages) {
-        Map<Integer, Integer> stageMap = new HashMap<>();
-        int challengers = stages.length;
-        Arrays.sort(stages);
+        List<Stage> stageList = new ArrayList<>();
 
-        for (int stage : stages) {
-            if (stageMap.containsKey(stage)) {
-                int value = stageMap.get(stage);
-                stageMap.put(stage, ++value);
+        for (int i = 1; i <= N; i++) {
+            int challenger = 0;
+            int clearedMember = 0;
+
+            for (int stage : stages) {
+                if (i == stage) {
+                    challenger += 1;
+                }
+
+                if (i <= stage) {
+                    clearedMember += 1;
+                }
+            }
+
+            if (challenger == 0) {
+                stageList.add(new Stage(i, 0));
             } else {
-                stageMap.put(stage, 1);
+                stageList.add(new Stage(i, (double) challenger / clearedMember));
             }
         }
 
-        List<StageInfo> stageInfoList = new ArrayList<>();
-
-        int noIndex = 1;
-        for (Map.Entry<Integer, Integer> entry : stageMap.entrySet()) {
-            int stage = entry.getKey();
-            int numbers = entry.getValue();
-
-            if (stage == noIndex) {
-                stageInfoList.add(new StageInfo(stage, (double)numbers / challengers));
+        stageList.sort((o1, o2) -> {
+            if (o1.failRatio != o2.failRatio) {
+                return -Double.compare(o1.failRatio, o2.failRatio);
+            } else {
+                return Integer.compare(o1.no, o2.no);
             }
-            challengers = challengers - numbers;
+        });
+
+        for (Stage stage : stageList) {
+            System.out.println(stage.no + " " + stage.failRatio);
         }
 
-        Collections.sort(stageInfoList);
-
-        for (StageInfo stageInfo : stageInfoList) {
-            System.out.println(stageInfo);
-        }
-
-        int[] answer = new int[stageInfoList.size()];
-
-        int index = 0;
-        for (StageInfo stageInfo : stageInfoList) {
-            answer[index++] = stageInfo.no;
-        }
-
-        return answer;
+        return stageList.stream()
+                .mapToInt(stage -> stage.no)
+                .toArray();
     }
 
-    class StageInfo implements Comparable {
+    class Stage {
         private int no;
         private double failRatio;
 
-        public StageInfo(int no, double failRatio) {
+        public Stage(int no, double failRatio) {
             this.no = no;
             this.failRatio = failRatio;
-        }
-
-        @Override
-        public String toString() {
-            return "StageInfo{" +
-                    "stage=" + no +
-                    ", failRatio=" + failRatio +
-                    '}';
-        }
-
-        @Override
-        public int compareTo(Object o) {
-            StageInfo other = (StageInfo) o;
-
-            if (failRatio != other.failRatio) {
-                return -Double.compare(failRatio, other.failRatio);
-            }else {
-                return Integer.compare(no, other.no);
-            }
         }
     }
 }
