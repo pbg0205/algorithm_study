@@ -21,8 +21,7 @@ class FailRatio {
     public int[] solution(int N, int[] stages) {
         Map<Integer, Integer> stageMap = new HashMap<>();
         List<Stage> stageList = new ArrayList<>();
-
-
+        
         for (int stage : stages) {
             if(stageMap.containsKey(stage)) {
                 stageMap.put(stage, stageMap.get(stage) + 1);
