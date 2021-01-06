@@ -14,11 +14,11 @@ class Main {
         print(formulas);
         System.out.println(greedy(numbers, formulas));
 
-
         scanner.close();
     }
 
     private static String[] seperateFormula(String expression) {
+        //return expression.split("^[0-9]+$");
         List<String> formulaList = new ArrayList<>();
 
         for (int index = 0; index < expression.length() - 1; index++) {
