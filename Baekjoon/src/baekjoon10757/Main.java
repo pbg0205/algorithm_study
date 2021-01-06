@@ -8,8 +8,8 @@ package baekjoon10757;
  */
 
 import java.util.Scanner;
-//String, StringBuilder 보두 index 참조가 20까지이므로 분리해서 추가하는 방법으로 고려해야 할 것 같음.
-public class Main {
+
+class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder result = new StringBuilder();
@@ -17,13 +17,13 @@ public class Main {
         StringBuilder a = toStringBuilder(scanner.next());
         StringBuilder b = toStringBuilder(scanner.next());
 
-        int index_a = a.length();
-        int index_b = b.length();
+        int index_a = a.length() - 1;
+        int index_b = b.length() - 1;
 
         boolean carry = false;
         int sum;
 
-        while(index_a >= 0 || index_b >= 0) {
+        while (index_a >= 0 || index_b >= 0) {
             int number_a = initNumber(a, index_a--);
             int number_b = initNumber(b, index_b--);
 
@@ -33,7 +33,7 @@ public class Main {
             result.insert(0, sum);
         }
 
-        if(carry) {
+        if (carry) {
             result.insert(0, "1");
         }
 
@@ -58,7 +58,7 @@ public class Main {
     }
 
     private static boolean carry(int a, int b, boolean carry) {
-        return a + b >= 10;
+        return carry ? ((a + b + 1) >= 10) : ((a + b) >= 10);
     }
 
     private static int sum(int a, int b, boolean carry) {
