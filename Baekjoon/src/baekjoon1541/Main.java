@@ -1,5 +1,12 @@
 package baekjoon1541;
 
+/*
+ * @Problem     잃어버린 괄호(1541)
+ * @url         https://www.acmicpc.net/problem/1541
+ * @author      pbg0205
+ * @created by  2020.01.06
+ */
+
 import java.util.*;
 
 class Main {
@@ -18,7 +25,6 @@ class Main {
     }
 
     private static String[] seperateFormula(String expression) {
-        //return expression.split("^[0-9]+$");
         List<String> formulaList = new ArrayList<>();
 
         for (int index = 0; index < expression.length() - 1; index++) {
@@ -40,24 +46,13 @@ class Main {
     private static int greedy(int[] numbers, String[] formulas) {
         boolean hasMinus = false;
         int sum = numbers[0];
-        int temp = 0;
-        int index = 1;
+        int formula_index = 0;
 
-        for (String formula : formulas) {
-            if(formula.equals("-")) {
+        for (int index = 1; index < numbers.length; index++) {
+            if(formulas[formula_index++].equals("-")) {
                 hasMinus = true;
-                sum -= temp;
-                temp = 0;
-                temp += numbers[index++];
-            }else {
-                temp += numbers[index++];
             }
-        }
-
-        if(hasMinus) {
-            sum -= temp;
-        }else{
-            sum += temp;
+            sum = hasMinus ? sum - numbers[index] : sum + numbers[index];
         }
 
         return sum;
