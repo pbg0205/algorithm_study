@@ -172,6 +172,7 @@
     | 14916 | 거스름돈 | [문제](https://www.acmicpc.net/problem/14916) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon14916/Main.java)|
 	| 1931 | 회의실 배정 | [문제](https://www.acmicpc.net/problem/1931) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1931/Main.java)|    
 	| 2138 | 전구와 스위치 | [문제](https://www.acmicpc.net/problem/2138) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon2138/Main.java)|
+	| 1541 |  잃어버린 괄호 | [문제](https://www.acmicpc.net/problem/1541) | [답안](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1541/Main.java)|
 
 - Dijkstra (다익스트라)
 
