@@ -38,8 +38,8 @@ class Main {
         return formulaList.toArray(formulas);
     }
 
-    private static int[] seperateNumber(String exprresion) {
-        String[] numbersAsStr = exprresion.split("[+-]");
+    private static int[] seperateNumber(String expression) {
+        String[] numbersAsStr = expression.split("[+-]");
         return Arrays.stream(numbersAsStr).mapToInt(Integer::parseInt).toArray();
     }
 
