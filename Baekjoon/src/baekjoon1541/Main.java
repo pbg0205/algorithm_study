@@ -7,66 +7,47 @@ package baekjoon1541;
  * @created by  2020.01.06
  */
 
-import java.util.*;
+import java.util.Scanner;
 
+// -> 구분을 하는 과정에서 타임 레이턴시가 발생한다.
+// -> 바로 index를 참조해서 연산을 구현하면 메모리, 시간 복잡도면에서도 효율 개선된다.
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         String expression = scanner.nextLine();
-        int[] numbers = seperateNumber(expression);
-        String[] formulas = seperateFormula(expression);
-
-        print(numbers);
-        print(formulas);
-        System.out.println(greedy(numbers, formulas));
+        System.out.println(greedy(expression));
 
         scanner.close();
     }
 
-    private static String[] seperateFormula(String expression) {
-        List<String> formulaList = new ArrayList<>();
+    private static int greedy(String expression) {
+        char[] charArr = expression.toCharArray();
+        boolean hasMinus = (charArr[0] == '-');
+        int sum = 0;
+        String temp = "";
 
-        for (int index = 0; index < expression.length() - 1; index++) {
-            String temp = expression.substring(index, index+1);
-            if(temp.equals("+") || temp.equals("-")) {
-                formulaList.add(temp);
+        int index = hasMinus ? 1 : 0;
+        while (index < charArr.length) {
+
+            if (charArr[index] == '+' || charArr[index] == '-') {
+                sum = hasMinus ? sum - toInt(temp) : sum + toInt(temp);
+                temp = "";
+
+                if(charArr[index] == '-') {
+                    hasMinus = true;
+                }
+            } else {
+                temp += charArr[index];
             }
+
+            index++;
         }
 
-        String[] formulas = new String[formulaList.size()];
-        return formulaList.toArray(formulas);
+        return hasMinus ? sum - toInt(temp) : sum + toInt(temp);
     }
 
-    private static int[] seperateNumber(String expression) {
-        String[] numbersAsStr = expression.split("[+-]");
-        return Arrays.stream(numbersAsStr).mapToInt(Integer::parseInt).toArray();
-    }
-
-    private static int greedy(int[] numbers, String[] formulas) {
-        boolean hasMinus = false;
-        int sum = numbers[0];
-        int formula_index = 0;
-
-        for (int index = 1; index < numbers.length; index++) {
-            if(formulas[formula_index++].equals("-")) {
-                hasMinus = true;
-            }
-            sum = hasMinus ? sum - numbers[index] : sum + numbers[index];
-        }
-
-        return sum;
-    }
-
-    private static void print(String[] formulas) {
-        for (String formula : formulas) {
-            System.out.println(formula);
-        }
-    }
-
-    private static void print(int[] numbers) {
-        for (int number : numbers) {
-            System.out.println(number);
-        }
+    public static int toInt(String str) {
+        return Integer.parseInt(str);
     }
 }
