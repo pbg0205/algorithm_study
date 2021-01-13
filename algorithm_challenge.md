@@ -11,6 +11,8 @@
 |      일지      |  주차  |                        문제1                        |                        문제2                        |                        문제3                        |
 |:--------------:|:------:|:---------------------------------------------------|:----------------------------------------------------|:----------------------------------------------------|
 | 12/30 ~ 01/03  |   1    |[시리얼번호](https://www.acmicpc.net/problem/1431)   |[하노이의 탑](https://www.acmicpc.net/problem/1914)   |[별 찍기 - 10](https://www.acmicpc.net/problem/2447) |
+| 01/04 ~ 01/10  |   2    |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | [잃어버린 괄호](https://www.acmicpc.net/problem/1541) | [동전1](https://www.acmicpc.net/problem/2293)|
+| 01/11 ~ 01/17  |   3    |[오픈 채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888) | [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) |  |
 
 
 <br><br><br><br><br><br><br><br>
@@ -21,6 +23,6 @@
 |      일지      |  주차  |                        문제1                        |                        문제2                        |                        문제3                        |
 |:--------------:|:------:|:---------------------------------------------------|:----------------------------------------------------|:----------------------------------------------------|
 | 12/30 ~ 01/03  |   1    |[시리얼번호](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/Baekjoon1431/Main.java)   |[하노이의 탑](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1914/Main.java)   |[별 찍기 - 10](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon2447/Main.java) |
-
+| 01/04 ~ 01/10  |   2    |[실패율](https://github.com/pbg0205/algorithm_study/blob/master/programmers/src/sorting/FailRatio.java) | [잃어버린 괄호](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1541/Main.java) | 해결X
 
 <br><br><br><br><br><br><br>
