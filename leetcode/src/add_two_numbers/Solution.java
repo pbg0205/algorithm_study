@@ -37,7 +37,7 @@ class Solution {
 }
 
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode() {}
