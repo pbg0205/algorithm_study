@@ -9,8 +9,8 @@ package baekjoon1541;
 
 import java.util.Scanner;
 
-// -> 기존코드 : 문자열을 3번 순회하므로 latency를 개선할 코드가 필요하다..
-// -> index를 참조해서 연산하면 메모리, 시간 복잡도면에서도 효율적이다.
+// -> 구분을 하는 과정에서 타임 레이턴시가 발생한다.
+// -> 바로 index를 참조해서 연산을 구현하면 메모리, 시간 복잡도면에서도 효율 개선된다.
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
