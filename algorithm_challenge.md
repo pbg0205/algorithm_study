@@ -13,6 +13,7 @@
 | 12/30 ~ 01/03  |   1    |[시리얼번호](https://www.acmicpc.net/problem/1431)   |[하노이의 탑](https://www.acmicpc.net/problem/1914)   |[별 찍기 - 10](https://www.acmicpc.net/problem/2447) |
 | 01/04 ~ 01/10  |   2    |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | [잃어버린 괄호](https://www.acmicpc.net/problem/1541) | [동전1](https://www.acmicpc.net/problem/2293)|
 | 01/11 ~ 01/17  |   3    |[오픈 채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888) | [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) |  |
+| 01/18 ~ 01/24  |   4    |[큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) |  |
 
 
 <br><br><br><br><br><br><br><br>
