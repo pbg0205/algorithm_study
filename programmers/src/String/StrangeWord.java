@@ -8,6 +8,11 @@ package String;
  */
 
 public class StrangeWord {
+    public static void main(String[] args) {
+        StrangeWord sw = new StrangeWord();
+        sw.solution("try hello world");
+    }
+
     public String solution(String s) {
         String answer = "";
         String[] strArr = s.split(" ", -1);
