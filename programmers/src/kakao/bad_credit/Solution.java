@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Solution2 {
+public class Solution {
     private Set<Set<String>> bannedSet;
 
     public int solution(String[] user_id, String[] banned_id) {
@@ -51,7 +51,6 @@ public class Solution2 {
 
         for (int index = 0; index < control.length(); index++) {
             if (compare.charAt(index) == '*') {
-                index++;
                 continue;
             }
 
@@ -64,7 +63,7 @@ public class Solution2 {
     }
 
     public static void main(String[] args) {
-        Solution2 solution2 = new Solution2();
+        Solution solution = new Solution();
 
         String[] user_id = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
         String[] banned_id = {"fr*d*", "abc1**"};
@@ -72,7 +71,7 @@ public class Solution2 {
         String[] user_id3 = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
         String[] banned_id3 = {"fr*d*", "*rodo", "******", "******"};
 
-        int answer = solution2.solution(user_id3, banned_id3);
+        int answer = solution.solution(user_id3, banned_id3);
         System.out.println(answer);
     }
 }
