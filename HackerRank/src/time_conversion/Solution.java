@@ -1,22 +1,23 @@
 package time_conversion;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class Solution {
     static String timeConversion(String s) {
-        String[] timeArr = s.split(":");
-        String AM_PM = timeArr[2].substring(2,4);
+        SimpleDateFormat originalsdf = new SimpleDateFormat("hh:mm:ssa",Locale.US);
+        SimpleDateFormat parseFormat = new SimpleDateFormat("HH:mm:ss");
 
-        int hour = Integer.parseInt(timeArr[0]);
-        int minute = Integer.parseInt(timeArr[1]);
-        int second = Integer.parseInt(timeArr[2].substring(0,2));
+        Date date = null;
 
-        if(AM_PM.equals("AM") && hour == 12) {
-            hour = 0;
+        try {
+            date = originalsdf.parse(s);
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
 
-        if(AM_PM.equals("PM") && hour < 12) {
-            hour += 12;
-        }
-
-        return String.format("%02d:%02d:%02d", hour, minute, second);
+        return parseFormat.format(date);
     }
 }
