@@ -14,6 +14,7 @@
 | 01/04 ~ 01/10  |   2    |[실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | [잃어버린 괄호](https://www.acmicpc.net/problem/1541) | [동전1](https://www.acmicpc.net/problem/2293)|
 | 01/11 ~ 01/17  |   3    |[오픈 채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888) | [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) |  |
 | 01/18 ~ 01/24  |   4    |[큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) |  |
+| 01/18 ~ 01/24  |   5    |<r3> [프로그래머스 레벨1 다 풀기](https://programmers.co.kr/learn/challenges)|
 
 
 <br><br><br><br><br><br><br><br>
@@ -25,5 +26,7 @@
 |:--------------:|:------:|:---------------------------------------------------|:----------------------------------------------------|:----------------------------------------------------|
 | 12/30 ~ 01/03  |   1    |[시리얼번호](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/Baekjoon1431/Main.java)   |[하노이의 탑](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1914/Main.java)   |[별 찍기 - 10](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon2447/Main.java) |
 | 01/04 ~ 01/10  |   2    |[실패율](https://github.com/pbg0205/algorithm_study/blob/master/programmers/src/sorting/FailRatio.java) | [잃어버린 괄호](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon1541/Main.java) | 해결X
+| 01/11 ~ 01/17  |   3    |[오픈 채팅방](https://github.com/pbg0205/algorithm_study/blob/master/programmers/src/HashMap/Solution.java) | [연산자 끼워넣기](https://github.com/pbg0205/algorithm_study/blob/master/Baekjoon/src/baekjoon14888/Main.java) |  |
+| 01/18 ~ 01/24  |   4    |[큰 수 만들기(실패코드ㅠ)](https://github.com/pbg0205/algorithm_study/blob/master/programmers/src/greedy/MakingBigNumber.java) | [전화번호 목록](https://github.com/pbg0205/algorithm_study/blob/master/programmers/src/sorting/Telephone_list.java) |  |
 
 <br><br><br><br><br><br><br>
