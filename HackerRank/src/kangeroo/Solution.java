@@ -8,12 +8,12 @@ package kangeroo;
   */
 public class Solution {
      static String kangaroo(int x1, int v1, int x2, int v2) {
-         int distance = x1 - x2;
+         int distance = x2 - x1;
          int velocityDifference = v2 - v1;
 
          if(velocityDifference == 0){
              return "NO";
-         } else if((distance % velocityDifference == 0) && (distance / velocityDifference > 0)) {
+         } else if((distance % velocityDifference == 0) && (distance / velocityDifference < 0)) {
              return "YES";
          } else {
              return "NO";
