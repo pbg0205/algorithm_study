@@ -1,4 +1,4 @@
-package level1.sum_of_matrix.inner_product;
+package level1.inner_product;
 
 public class Solution {
     public int solution(int[] a, int[] b) {
