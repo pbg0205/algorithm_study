@@ -7,37 +7,50 @@ import java.util.Arrays;
  * @Url         : https://programmers.co.kr/learn/courses/30/lessons/64062?language=java
  * @Author      : pbg0205
  * @Created by : 2021.01.31
- * //TODO O(n^2) 접근 실패 -> 다른 접근법 사용해서 풀기
+ *
  */
 class Solution {
     public int solution(int[] stones, int k) {
-        int answer = 0;
         int minOfStoneNumber = Arrays.stream(stones).min().getAsInt();
-        stones = Arrays.stream(stones).map(stone -> stone - minOfStoneNumber).toArray();
+        int maxOfStoneNumber = Arrays.stream(stones).max().getAsInt();
 
-        answer += minOfStoneNumber;
+        return binarySearch(stones, k, minOfStoneNumber, maxOfStoneNumber);
+    }
 
-        // 2, 4, 5, 3, 2, 1, 4, 2, 5, 1
-        //   +2,+1,-2,-1,-1, 3,-2,+3,-4
-        while (true) {
-            int jumpCount = 1;
+    private int binarySearch(int[] stones, int k, int low, int high) {
+        if(low == high) {
+            return low;
+        }
 
-            for (int index = 0; index < stones.length; index++) {
-                if (stones[index] == 0) {
-                    jumpCount++;
-                    continue;
-                }
+        while(low < high) {
+            int mid = low + (high - low) / 2;
 
-                if (jumpCount > k) {
-                    return answer;
-                }
+            if(canJump(stones, k, mid)) {
+                low = mid + 1;
+            } else {
+                high = mid;
+            }
+        }
 
-                stones[index] -= 1;
-                jumpCount = 1;
+        return low - 1;
+    }
+
+    private boolean canJump(int[] stones, int k, int mid) {
+        int jumpCount = 0;
+
+        for (int stone : stones) {
+            if(stone - mid < 0) {
+                jumpCount++;
+            } else {
+                jumpCount = 0;
             }
 
-            answer++;
+            if(jumpCount >= k) {
+                return false;
+            }
         }
+
+        return true;
     }
 
     public static void main(String[] args) {
