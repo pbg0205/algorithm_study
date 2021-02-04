@@ -12,11 +12,7 @@ public class Solution {
     public int[] solution(String[] gems) {
         int[] answer = new int[2];
 
-        for (String gem : gems) {
-            if (!set.contains(gem)) {
-                set.add(gem);
-            }
-        }
+        initSet(gems);
 
         int start = 0;
         int end = 0;
@@ -49,6 +45,14 @@ public class Solution {
         answer[1] = answer[0] + MIN_LENGTH - 1;
 
         return answer;
+    }
+
+    private void initSet(String[] gems) {
+        for (String gem : gems) {
+            if (!set.contains(gem)) {
+                set.add(gem);
+            }
+        }
     }
 
     private boolean containAlljewerlys() {
