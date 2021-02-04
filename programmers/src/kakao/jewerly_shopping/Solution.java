@@ -39,7 +39,7 @@ public class Solution {
                 end++;
             }
 
-            if (map.size() == set.size()) {
+            if (containAlljewerlys()) {
                 getMinLength(start, end);
                 getMinIndex(start, nowLength);
             }
@@ -49,6 +49,10 @@ public class Solution {
         answer[1] = answer[0] + MIN_LENGTH - 1;
 
         return answer;
+    }
+
+    private boolean containAlljewerlys() {
+        return map.size() == set.size();
     }
 
     private void getMinLength(int start, int end) {
