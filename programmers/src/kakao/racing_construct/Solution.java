@@ -1,31 +1,27 @@
 package programmers.src.kakao.racing_construct;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 class Solution {
     private static int size;
     private static int min;
     private static int direction;
 
-    private static boolean[][] visited;
-    private static int[] dx = {-1, 0, 1, 0};
-    private static int[] dy = { 0, 1, 0,-1};
+    private static int[][] map;
+    private static final int[] dx = {-1, 0, 1, 0};
+    private static final int[] dy = { 0, 1, 0,-1};
 
     public int solution(int[][] board) {
-        int answer = 0;
-
-        visited = new boolean[board.length][board.length];
 
         size = board.length;
         min = Integer.MAX_VALUE;
         direction = dx.length;
 
-        BFS(board);
-        // 직선의 갯수 + 코너의 갯수
-        //BFS로 돌린다. -> 이전의 인덱스가 일치할 경우 직선, 아닐 경우 코너로 판단한다.
+        map = new int[board.length][board.length];
 
-        return answer;
+        BFS(board);
+
+        return min;
     }
 
     private void BFS(int[][] board) {
@@ -37,8 +33,8 @@ class Solution {
             Location location = queue.poll();
 
             if(isFinished(location)) {
-                int cost = location.linear * 100 + location.curve * 500;
-                min = cost < min ? min : cost;
+                min = Math.min(location.sum, min);
+                continue;
             }
 
             for (int i = 0; i < direction; i++) {
@@ -50,17 +46,17 @@ class Solution {
                     continue;
                 }
 
-                // 이동하는데 이전 인덱스와 같거나 -1이면 직선, 아니면 커브이다.
-                if(isLinear(location, i) && !visited[nx][ny]) {
-                    queue.offer(new Location(nx, ny, location.linear + 1, location.curve, i));
-                    visited[nx][ny] = true;
-                    continue;
+                int nextFieldSum = location.sum;
+
+                if(isLinear(location, i)) {
+                    nextFieldSum = location.sum + 100;
+                }else if(isCurve(location, i)) {
+                    nextFieldSum = location.sum + 600;
                 }
 
-                if(isCurve(location, i) && !visited[nx][ny]) {
-                    queue.offer(new Location(nx, ny, location.linear, location.curve + 1, i));
-                    visited[nx][ny] = true;
-                    continue;
+                if(map[nx][ny] == 0 || map[nx][ny] >= nextFieldSum) {
+                    map[nx][ny] = nextFieldSum;
+                    queue.offer(new Location(nx, ny, nextFieldSum, i));
                 }
             }
         }
@@ -79,7 +75,7 @@ class Solution {
     }
 
     public boolean isLinear(Location location, int index) {
-        return (location.prev_index == index || index == -1);
+        return (location.prev_index == index || location.prev_index == -1);
     }
 
     public boolean isCurve(Location location, int index) {
@@ -106,23 +102,20 @@ class Solution {
 class Location {
     int x;
     int y;
-    int linear;
-    int curve;
+    int sum;
     int prev_index;
 
     public Location(int x, int y) {
         this.x = x;
         this.y = y;
-        this.linear = 0;
-        this.curve = 0;
+        this.sum = 0;
         this.prev_index = -1;
     }
 
-    public Location(int x, int y, int linear, int curve, int prev_index) {
+    public Location(int x, int y, int sum, int prev_index) {
         this.x = x;
         this.y = y;
-        this.linear = linear;
-        this.curve = curve;
+        this.sum = sum;
         this.prev_index = prev_index;
     }
 }
