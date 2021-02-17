@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 /*
  * @Problem     부분 수열의 합(1182) : https://www.acmicpc.net/problem/1182
- * @Author      pbgu0205
+ * @Author      pbg0205
  * @Created by  09.19.20
  */
 class Main_bitmask {
