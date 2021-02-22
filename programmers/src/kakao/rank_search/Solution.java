@@ -7,52 +7,68 @@ import java.util.*;
  * @Url         https://programmers.co.kr/learn/courses/30/lessons/72412
  * @Author      pbg0205@naver.com
  * @Created by  2021.02.22
- * @ 시간초과.....
  */
 
 class Solution {
     public int[] solution(String[] info, String[] query) {
-        int[] answer = new int[query.length];
-        List<Candidate> candidateList = new ArrayList<>();
+        Map<String, List<Integer>> infos = new HashMap<>();
 
-        for (String s : info) {
-            String[] temp = s.split(" ");
-            System.out.println(temp[0] + " " + temp[1] + " " + temp[2] + " " + temp[3] + " " + temp[4]);
-            candidateList.add(new Candidate(temp[0], temp[1], temp[2], temp[3], temp[4]));
-        }
+        init(infos, info);
+        sortListInMap(infos);
+        parseData(infos, query);
+
+        return parseData(infos, query);
+    }
+
+    private int[] parseData(Map<String, List<Integer>> infos, String[] queries) {
+        int[] answer = new int[queries.length];
+        List<Integer> empty = new ArrayList<>();
 
         int index = 0;
-        for (String s : query) {
-            List<String> query_temp = new ArrayList<>();
-            query_temp.addAll(Arrays.asList(s.split(" and ")));
+        for (String query : queries) {
+            String[] split = query.replaceAll("-", "").split(" and | ");
+            String key = String.join("", split[0], split[1], split[2], split[3]);
+            int score = Integer.parseInt(split[4]);
 
-            String soulAndScore = query_temp.remove(query_temp.size() - 1);
-            String[] temp = soulAndScore.split(" ");
-            query_temp.add(temp[0]);
-            query_temp.add(temp[1]);
-
-            String[] queries = new String[5];
-            getCount(candidateList, query_temp.toArray(queries), answer, index);
-            index++;
+            List<Integer> list = infos.getOrDefault(key, empty);
+            answer[index++] = binarySearch(list, score);
         }
 
         return answer;
     }
 
-    private void getCount(List<Candidate> candidateList, String[] query_temp, int[] answer, int index) {
-        String query_language = query_temp[0].equals("-") ? "cpp, java, python" : query_temp[0];
-        String query_type = query_temp[1].equals("-") ? "backend frontend" : query_temp[1];
-        String query_career = query_temp[2].equals("-") ? "junior senior" : query_temp[2];
-        String query_soulFood = query_temp[3].equals("-") ? "pizza, chicken" : query_temp[3];
-        int query_score = query_temp[4].equals("-") ? 0 : Integer.parseInt(query_temp[4]);
+    private int binarySearch(List<Integer> list, int score) {
+        int start = 0, end = list.size();
 
-        answer[index] = (int) candidateList.stream()
-                .filter(candidate -> query_language.contains(candidate.language))
-                .filter(candidate -> query_type.contains(candidate.type))
-                .filter(candidate -> query_career.contains(candidate.career))
-                .filter(candidate -> query_soulFood.contains(candidate.soulFood))
-                .filter(candidate -> candidate.score >= query_score)
-                .count();
+        while (start < end) {
+            int mid = (start + end) / 2;
+
+            if (list.get(mid) < score) start = mid + 1;
+            else end = mid;
+        }
+
+        return list.size() - start;
+    }
+
+    private void init(Map<String, List<Integer>> infos, String[] info) {
+        for (String in : info) {
+            String[] split = in.split(" ");
+            int score = Integer.parseInt(split[4]);
+
+            for (int i = 0; i < (1 << 4); i++) {
+                StringBuilder key = new StringBuilder();
+
+                for (int j = 0; j < 4; j++) {
+                    if ((i & (1 << j)) > 0) key.append(split[j]);
+                }
+                infos.computeIfAbsent(key.toString(), s -> new ArrayList<>()).add(score);
+            }
+        }
+    }
+
+    private void sortListInMap(Map<String, List<Integer>> infos) {
+        for (Map.Entry<String, List<Integer>> entry : infos.entrySet())
+            entry.getValue().sort(null);
     }
 
     public static void main(String[] args) {
@@ -76,21 +92,5 @@ class Solution {
         for (int result : results) {
             System.out.println(result);
         }
-    }
-}
-
-class Candidate {
-    String language;
-    String type;
-    String career;
-    String soulFood;
-    int score;
-
-    public Candidate(String language, String type, String career, String soulFood, String score) {
-        this.language = language;
-        this.type = type;
-        this.career = career;
-        this.soulFood = soulFood;
-        this.score = score.equals("-") ? -1 : Integer.parseInt(score);
     }
 }
