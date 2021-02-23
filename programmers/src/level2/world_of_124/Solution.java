@@ -12,24 +12,17 @@ import java.util.*;
 class Solution {
     public String solution(int n) {
         String answer = "";
+        String[] numbers = {"4", "1", "2"};
 
         while (n > 0) {
             int remainder = n % 3;
             n /= 3;
 
-            if (remainder == 0) n--;
-
-            if(remainder == 0) {
-            answer = "4" + answer;
+            if (remainder == 0) {
+                n--;
             }
 
-            if(remainder == 1) {
-                answer = "1" + answer;
-            }
-
-            if(remainder == 2) {
-                answer = "2" + answer;
-            }
+            answer = numbers[remainder] + answer;
         }
         return answer;
     }
