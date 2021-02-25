@@ -1,4 +1,4 @@
-package baekjoon7576;
+package Baekjoon.src.baekjoon7576;
 /*
  * @problem		토마토(7576) : https://www.acmicpc.net/problem/7576
  * @author		pbg0205
