@@ -15,12 +15,13 @@ public class Main {
         StringTokenizer st = null;
 
         cityCount = Integer.parseInt(br.readLine());
-        int butCount = Integer.parseInt(br.readLine());
+        int busCount = Integer.parseInt(br.readLine());
+
         distance = new int[cityCount + 1][cityCount + 1];
 
         initDistance();
 
-        while(butCount-- > 0) {
+        while (busCount-- > 0) {
             st = new StringTokenizer(br.readLine());
 
             int start = Integer.parseInt(st.nextToken());
@@ -30,39 +31,34 @@ public class Main {
             distance[start][end] = Math.min(distance[start][end], time);
         }
 
-        floydWashall();
-        
+        floydWarshall();
         print();
     }
 
-    private static void floydWashall() {
+    public static void floydWarshall() {
+        // 기준이 되는 거쳐가는 노드 K
         for (int k = 1; k <= cityCount; k++) {
+            // 출발하는 노드 i
             for (int i = 1; i <= cityCount; i++) {
+                // 도착하는 노드 j
                 for (int j = 1; j <= cityCount; j++) {
-                    distance[i][j] = Math.min(distance[i][j], distance[i][k] + distance[k][j]);
+                    //i에서 k를 거쳤다가 k에서 j 까지 가는 거리와 i에서 j 까지 가는 거리를 비교해서 작은 값이 최소거리이다.
+                    distance[i][j] = Math.min(distance[i][k] + distance[k][j], distance[i][j]);
                 }
             }
         }
     }
 
-    private static void initDistance() {
-        for (int from = 1; from <= cityCount; from++) {
-            for (int to = 1; to <= cityCount; to++) {
-                if(from != to) {
-                    distance[from][to] = INF;
-                }
+    public static void print() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= cityCount; i++) {
+            for (int j = 1; j <= cityCount; j++) {
+                if (distance[i][j] >= INF) sb.append("0 ");
+                else sb.append(distance[i][j] + " ");
             }
+            sb.append("\n");
         }
-    }
 
-    private static void print() {
-        int length = distance.length;
-
-        for (int i = 1; i < length; i++) {
-            for (int j = 1; j < length; j++) {
-                System.out.print(distance[i][j] + " ");
-            }
-            System.out.println();
-        }
+        System.out.println(sb.toString());
     }
 }
