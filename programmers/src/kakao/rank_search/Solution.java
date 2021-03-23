@@ -15,7 +15,6 @@ class Solution {
 
         init(infos, info);
         sortListInMap(infos);
-        parseData(infos, query);
 
         return parseData(infos, query);
     }
