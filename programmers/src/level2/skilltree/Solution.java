@@ -16,7 +16,6 @@ public class Solution {
             String skill_clone = skill_tree;
 
             int size = skill_tree.length();
-
             for (int i = 0; i < size; i++) {
                 String oneSkill = String.valueOf(skill_clone.charAt(i));
                 if (!skill.contains(oneSkill)) {
