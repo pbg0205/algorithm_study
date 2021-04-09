@@ -19,7 +19,7 @@ public class Main {
 
         distance = new int[cityCount + 1][cityCount + 1];
 
-        initDistance();
+        //initDistance();
 
         while (busCount-- > 0) {
             st = new StringTokenizer(br.readLine());
