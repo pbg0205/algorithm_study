@@ -1,30 +1,54 @@
 package programmers.src.level2.candidate_key;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 class Solution {
     public int solution(String[][] relation) {
-        int answer = 0;
+        ArrayList<Integer> candidateKey = new ArrayList<>();
 
-        for (int col = 0; col < relation[0].length; col++) {
-            Set<String> candidateSet = new HashSet<>();
-            boolean isCandidateKey = true;
+        int rowLen = relation.length;
+        int colLen = relation[0].length;
 
-            for (int row = 0; row < relation.length; row++) {
-                if (!candidateSet.contains(relation[row][col])) {
-                    candidateSet.add(relation[row][col]);
-                } else {
-                    isCandidateKey = false;
-                    break;
+        for(int set = 1 ; set < (1 << colLen) ; set++) {
+            // 최소성 검사
+            if(!isMinimal(set, candidateKey)) continue;
+
+            // 유일성 검사
+            if(isUnique(set, rowLen, colLen, candidateKey, relation)) {
+                System.out.println(Integer.toBinaryString(set));
+                candidateKey.add(set);
+            }
+        }
+
+        return candidateKey.size();
+    }
+
+    private boolean isUnique(int set, int rowLen, int colLen, ArrayList<Integer> candidateKey, String[][] relation) {
+        HashMap<String, String> map = new HashMap<>();
+
+        for(int row = 0 ; row < rowLen ; ++row) {
+            String dataByKeySet = "";
+
+            for(int th = 0 ; th < colLen ; ++th) {
+                if((set & (1 << th)) != 0) {
+                    dataByKeySet += relation[row][th];
                 }
             }
 
-            if (isCandidateKey) {
-                answer++;
-            }
+            if(map.containsKey(dataByKeySet)) return false;
+            else map.put(dataByKeySet, dataByKeySet);
         }
-        return answer;
+
+        return true;
+    }
+
+    private boolean isMinimal(int set, ArrayList<Integer> candidateKey) {
+        for(int key : candidateKey) {
+            if((key & set) == key) return false;
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {
