@@ -30,22 +30,22 @@ class Solution {
         }
     }
 
-    private int checkBlock(int m, int n, char[][] map) {
+    private int checkBlock(int rowSize, int colSize, char[][] map) {
         int cnt = 0;
-        boolean[][] isChecked = new boolean[m][n];
+        boolean[][] isChecked = new boolean[rowSize][colSize];
 
-        for (int i = 0; i < m - 1; ++i) {
-            for (int j = 0; j < n - 1; ++j) {
-                if (map[i][j] == '.') continue;
-                checkSquare(i, j, map, isChecked);
+        for (int row = 0; row < rowSize - 1; ++row) {
+            for (int col = 0; col < colSize - 1; ++col) {
+                if (map[row][col] == '.') continue;
+                checkSquare(row, col, map, isChecked);
             }
         }
 
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                if (isChecked[i][j]) {
+        for (int row = 0; row < rowSize; ++row) {
+            for (int col = 0; col < colSize; ++col) {
+                if (isChecked[row][col]) {
                     cnt++;
-                    map[i][j] = '.';
+                    map[row][col] = '.';
                 }
             }
         }
@@ -53,9 +53,9 @@ class Solution {
         return cnt;
     }
 
-    private void dropBlocks(int m, int n, char[][] map) {
-        for (int col = 0; col < n; ++col) {
-            for (int row = m - 1; row >= 0; --row) {
+    private void dropBlocks(int rowSize, int colSize, char[][] map) {
+        for (int col = 0; col < colSize; ++col) {
+            for (int row = rowSize - 1; row >= 0; --row) {
                 if (map[row][col] != '.') {
                     continue;
                 }
@@ -71,19 +71,19 @@ class Solution {
         }
     }
 
-    private void checkSquare(int i, int j, char[][] map, boolean[][] isChecked) {
-        char block = map[i][j];
+    private void checkSquare(int nowRow, int nowCol, char[][] map, boolean[][] isChecked) {
+        char block = map[nowRow][nowCol];
 
-        for (int row = i; row < i + SQUARE_SIZE; ++row) {
-            for (int col = j; col < j + SQUARE_SIZE; ++col) {
+        for (int row = nowRow; row < nowRow + SQUARE_SIZE; ++row) {
+            for (int col = nowCol; col < nowCol + SQUARE_SIZE; ++col) {
                 if (map[row][col] != block) {
                     return;
                 }
             }
         }
 
-        for (int row = i; row < i + SQUARE_SIZE; row++) {
-            for (int col = j; col < j + SQUARE_SIZE; col++) {
+        for (int row = nowRow; row < nowRow + SQUARE_SIZE; row++) {
+            for (int col = nowCol; col < nowCol + SQUARE_SIZE; col++) {
                 isChecked[row][col] = true;
             }
         }
