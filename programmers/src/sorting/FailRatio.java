@@ -33,7 +33,7 @@ class FailRatio {
         for (int nowStage = 1; nowStage <= N; nowStage++) {
             int challenger = 0;
             int clearedMember = 0;
-
+            //실패율 = 현재 도전자 / (성공멤버 + 현재 도전자)
             for (Map.Entry<Integer, Integer> entry : stageMap.entrySet()) {
                 int challengeStage = entry.getKey();
                 int value = entry.getValue();
@@ -56,9 +56,9 @@ class FailRatio {
 
         stageList.sort((o1, o2) -> {
             if (o1.failRatio != o2.failRatio) {
-                return -Double.compare(o1.failRatio, o2.failRatio);
+                return -Double.compare(o1.failRatio, o2.failRatio);//실패율에 내림차순
             } else {
-                return Integer.compare(o1.no, o2.no);
+                return Integer.compare(o1.no, o2.no);//같을 경우, 숫자에 오름차순
             }
         });
 
