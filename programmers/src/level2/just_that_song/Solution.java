@@ -1,4 +1,4 @@
-:ㅈㅂpackage programmers.src.level2.just_that_song;
+package programmers.src.level2.just_that_song;
 
 import java.util.ArrayList;
 import java.util.Collections;
