@@ -4,27 +4,40 @@ import java.util.*;
 
 class Solution {
     public ArrayList<Integer> solution(String msg) {
-        int[] answer = {};
-        ArrayList<Integer> ans = new ArrayList<Integer>();
-        int ind = 1;
-        HashMap<String, Integer> hs = new HashMap<String, Integer>();
-        for (char i = 'A'; i <= 'Z'; i++) {
-            hs.put(i + "", ind++);
+        int indexNumber = 1; //색인 번호
+
+        ArrayList<Integer> answerList = new ArrayList<>();
+        HashMap<String, Integer> dictionary = new HashMap<>();
+
+        for (char number = 'A'; number <= 'Z'; number++) {
+            dictionary.put(number + "", indexNumber++);
         }
-        int size = msg.length();
-        for (int i = 0; i < size; i++) {
-            int a = 1;
-            while (i + a <= size && hs.containsKey(msg.substring(i, i + a))) {
-                a++;
+
+        int messageSize = msg.length();
+
+        for (int index = 0; index < messageSize; index++) {
+            int nowLength = 1;
+
+            //1. 사전 추가 길이 탐색
+            while (index + nowLength <= messageSize && dictionary.containsKey(msg.substring(index, index + nowLength))) {
+                nowLength++;
             }
-            if (i + a > size) {
-                ans.add(hs.get(msg.substring(i)));
+
+            //2. 만약 길이가 넘어갈 경우
+            if (index + nowLength > messageSize) {
+                answerList.add(dictionary.get(msg.substring(index)));
                 break;
             }
-            ans.add(hs.get(msg.substring(i, i + a - 1)));
-            hs.put(msg.substring(i, i + a), ind++);
-            if (a > 1) i += a - 2;
+
+            //3. 출력 목록에 추가(사전 추가 길이 -1)
+            answerList.add(dictionary.get(msg.substring(index, index + nowLength - 1)));
+
+            //4. 사전에 등록
+            dictionary.put(msg.substring(index, index + nowLength), indexNumber++);
+
+            //5. 위치 이동
+            if (nowLength > 1) index += nowLength - 2;
         }
-        return ans;
+        return answerList;
     }
 }
