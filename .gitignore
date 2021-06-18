@@ -6,3 +6,4 @@
 *.class
 *.iml
 *.xml
+/out
